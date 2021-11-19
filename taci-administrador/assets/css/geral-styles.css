@@ -1,0 +1,74 @@
+
+:root {
+    --bs: 0.15em 0.15em 0.75em rgba(0,0,0, 0.25);
+    --clr-accent: #e6a9ba;
+    --clr-dark: #303030;
+    --clr-light: #fff;
+    --clr-bg-dark: rgb(53, 53, 53);
+    --clr--bg-light: #f5f5f5;
+}
+/* Relativos a página de teste */
+
+body {
+    background-color: var(--clr-accent);
+}
+
+.page-wraper {
+    width: min-content;
+    margin: auto auto;
+}
+
+/* Span box */
+.span-box {
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 220px;
+    height: fit-content;
+    padding: 1rem 1rem;
+    background-color: var(--clr--bg-light);
+    text-align: center;
+    border-radius: 5px;
+    border: #414141 solid 2px;
+    box-shadow: var(--bs);
+
+}
+
+.span-box h2{
+    padding: 0;
+    margin: 0 0 1rem;
+    font-size: 19px;
+}
+
+.input-passw-box {
+    margin-bottom: 1rem;
+    height: 2em;
+    border-radius: 5px;
+}
+/* Botões */
+.buttons-wraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-button {
+    font-size: 16px;
+    min-width: 80px;
+    padding: .7rem;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: var(--bs);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+
+.cancel-button {
+    font-size: 16px;
+    width: fit-content;
+    padding: .7rem;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: var(--bs);
+}
+
