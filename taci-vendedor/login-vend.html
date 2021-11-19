@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Título da página</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    Aqui vai o código HTML que fará seu site aparecer.
-  </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <title>Taci Login vendedor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+       
+    </header>
+  
+    <section id="login">
+        <div class="logo">
+            <div class="img-wraper"><img src="./assets/img/logo-taci.png" alt=""></div>
+            <div class="linha"></div>
+        </div>
+        <h1>Acesse a sua conta vendedor</h1>
+        <div class="entradas">
+            <p class="entradas__subtitle"> Insira abaixo as suas credenciais</p>
+            <form class=login-form>
+                <label for="e-mail">E-mail</label><br>
+                <input type="text" id="e-mail" name="e-mail"><br>
+                <label for="senha">Senha</label><br>
+                <input type="text" name="senha" id="senha">
+
+                <div class="g-recaptcha" data-sitekey="6LeqC0AdAAAAAPuHjF4YKdGKRB9kee5Rda1lbo_O"></div>
+
+                <input id="button" type="submit" value="Login" />
+                <a class="login__reset" href="#">Esqueci minha senha</a>
+            </form>
+        </div>
+
+    </section>
+    <footer>
+        <div class="marca-wraper"><p>Powered by C4NGAÇO SYSTEMS</p></div>
+    </footer>
+
+    <!-- js -->
+    <script src='https://www.google.com/recaptcha/api.js?hl=pt-br'></script>
+</body>
