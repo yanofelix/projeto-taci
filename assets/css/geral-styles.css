@@ -1,6 +1,8 @@
 
 /* Váriaveis */
 :root {
+    width: 100%;
+    height: 100%;
     --bs: 0.15em 0.15em 0.75em rgba(0,0,0, 0.25);
     --clr-accent: #EB8FA9;
     --clr-dark: #303030;
@@ -10,15 +12,24 @@
 }
 
 /* ---------- PÁG DE TESTE ---------- */
+
+.testnav {
+    width: 100%;
+    height: 100%;
+}
+
 .page-teste {
-    background-color: var(--clr-bg-dark);
+    background-color: var(--clr-light);
 }
 
 .page-wraper {
-    width: min-content;
+    position: relative;
+    width: 400px;
+    height: 300px;
     margin: auto auto;
     background-color: var(--clr-bg-light);
     padding: 2rem;
+    border: 5px solid chartreuse;
 }
 
 /* ---------- SPAN BOX ---------- */
@@ -37,7 +48,7 @@
     box-shadow: var(--bs);
 }
 
-.span-box h2{
+.span-box > h2{
     padding: 0;
     margin: 0 0 1rem;
     font-size: 18px;
@@ -96,7 +107,7 @@
 
 }
 
-.add-button-wraper i {
+.add-button-wraper > i {
     margin-right: 0.5em;
     font-size: 22px;
 }
@@ -129,5 +140,85 @@ label {
     margin-bottom: 0.5em;
 }
 
+/* ----------- NAVBAR ------------ */
 
+.nav {
+    position: fixed;
+    background-color: var(--clr-bg-dark);
+    color: var(--clr-light);
+    top: 0;
+    bottom: 0;
+    left: 20%;
+    right: 0;
+    z-index: 100;
+
+    transform: translate(100%);
+    transition: 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6em 0;
+}
+
+.nav__link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.nav__item:hover {
+    font-weight: 600;
+    color: violet;
+}
+
+.nav-toggle{
+    padding: .5em;
+    background-color: transparent;
+    /* border: 0; */
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 150;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.hamburguer {
+    display: block;
+    position: relative;
+}
+
+.hamburguer,
+.hamburguer::before,
+.hamburguer::after {
+    background-color: var(--clr-accent);
+    width: 2em;
+    height: 3px;
+    border-radius: 1px;
+    transition: transform 250ms ease-in-out;
+}
+
+.hamburguer::after,
+.hamburguer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburguer::after {bottom: 6px;}
+.hamburguer::before {top: 6px;}
 
