@@ -1,14 +1,38 @@
 
 /* Váriaveis */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
-    width: 100%;
     height: 100%;
-    --bs: 0.15em 0.15em 0.75em rgba(0,0,0, 0.25);
-    --clr-accent: #EB8FA9;
-    --clr-dark: #303030;
+    scroll-behavior: smooth;
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Roboto', sans-serif;
+
     --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #EB8FA9;
     --clr-bg-dark: rgb(53, 53, 53);
     --clr-bg-light: #f5f5f5;
+
+}
+
+body {
+    margin: 0;
+    background: var(--clr-bg-light);
+    color: var(--clr-dark);
+    font-family: var(--ff-secondary);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------- TIPOGRAFIA --------- */
+h1{
+    text-align: center;
 }
 
 /* ---------- PÁG DE TESTE ---------- */
@@ -24,8 +48,7 @@
 
 .page-wraper {
     position: relative;
-    width: 400px;
-    height: 300px;
+    width: fit-content;
     margin: auto auto;
     background-color: var(--clr-bg-light);
     padding: 2rem;
@@ -68,7 +91,7 @@
     margin: 0 auto;
 }
 
-.buttons-wraper {
+.next-cancel-button-wraper {
     display: flex;
     justify-content: space-between;
 }
@@ -100,23 +123,33 @@
 }
 
 /* botão adicionar */
-.add-button-wraper {
+.add-button-wrapper {
     display: flex;
     align-items: center;
     padding: 0 0.5em;
 
 }
 
-.add-button-wraper > i {
+.add-button-wrapper > i {
     margin-right: 0.5em;
     font-size: 22px;
+    
 }
 
 .add-button {
-    all: unset;
-    font-size: 1.2em;
-
+    border-style: none;
+    font-size: 1.5em;
+    margin-bottom:1rem;
 }
+
+.add-button > a {
+    text-decoration: none;
+}
+
+.add-button > a:visited {
+   color: var(--clr-dark);
+}
+
 
 /* ---------- FORMS ---------- */
 
@@ -131,15 +164,33 @@ label {
     font-size: 1.1em;
 }
 
-.input-login-box {
-    font-size: 1.3em;
+.input-pesquisa{
+    height: 1.8em;
     width: 100%;
-    height: 2em;
-    border-radius: 6px;
-    margin-top: 0;
-    margin-bottom: 0.5em;
+    border-radius: 7px;
+    margin-bottom: 1.5rem;
 }
 
+.logo-wrapper {
+    display: relative;
+    width: min-content;
+}
+
+.linha {
+    width: 45%;
+    height: 1.5px;
+    margin: 1em auto 0;
+    background: var(--clr-bg-dark);
+    opacity: .4;
+}
+
+
+header {padding: .7em;
+}
+
+.container {
+    padding: .7em;
+}
 /* ----------- NAVBAR ------------ */
 
 .nav {
@@ -178,13 +229,13 @@ label {
 }
 
 .nav-toggle{
-    padding: .5em;
+    padding: .7em;
     background-color: transparent;
     /* border: 0; */
     cursor: pointer;
     position: absolute;
-    right: 1em;
-    top: 1em;
+    right: .7em;
+    top: 2.8em;
     z-index: 150;
 }
 
@@ -205,8 +256,8 @@ label {
 .hamburguer::before,
 .hamburguer::after {
     background-color: var(--clr-accent);
-    width: 2em;
-    height: 3px;
+    width: 2.2em;
+    height: 4px;
     border-radius: 1px;
     transition: transform 250ms ease-in-out;
 }
@@ -219,6 +270,78 @@ label {
     right: 0;
 }
 
-.hamburguer::after {bottom: 6px;}
-.hamburguer::before {top: 6px;}
+.hamburguer::after {bottom: 8px;}
+.hamburguer::before {top: 8px;}
 
+/* Rodapé */
+footer {
+    font-size: 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--clr-light);
+    background: var(--clr-bg-dark);
+    height: 2.5em;
+    margin-top: auto ;
+
+}
+
+.marca-wraper {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.marca-wraper p {
+    margin: 0;
+}
+
+.cards {
+}
+
+.card {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--clr-dark);
+    border-radius: 10px;
+    margin-bottom: .5em;
+}
+
+.img-card-wrapper {
+    width: 110px;
+    border-radius: 12px 0 0 12px;
+    overflow: hidden;
+}   
+
+.card img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.card .conteudo {
+    height: 100%;
+    width:100%;
+    padding: .5em;
+    font-size: 17px;
+}
+
+.card .conteudo p {
+    margin: 0 0 0.4em;
+    padding: 0;
+}
+
+.edit-del-button-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.3em 0.5em;
+    font-size: 18px;
+}
+
+.edit-button,
+.del-button {
+    all: unset;
+}
