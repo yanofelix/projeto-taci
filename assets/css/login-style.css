@@ -90,7 +90,9 @@ h1 {
 /* entradas */
 
 .entradas {
+    max-width: 1000px;
     margin: 0 auto;
+
 }
 
 .entradas__subtitle {
@@ -103,3 +105,8 @@ h1 {
     width: fit-content;
     margin: 0 auto 1em;
 } 
+
+.login-form label {
+    margin-left: 3px;
+    font-size: 1.1em;
+}
