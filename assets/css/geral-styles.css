@@ -159,6 +159,15 @@ h1{
    color: var(--clr-dark);
 }
 
+/*botão upload de arquivos*/
+.button-upload{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;    
+}
+
 
 /* ---------- FORMS ---------- */
 
