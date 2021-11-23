@@ -29,6 +29,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* container da página */
+.container {
+    padding: .7em;
+}
 
 /* --------- TIPOGRAFIA --------- */
 h1{
@@ -43,10 +47,16 @@ h1{
 }
 
 .page-teste {
-    background-color: var(--clr-light);
+    min-width: 375px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px red solid;
 }
 
-.page-wraper {
+.page-wrapper {
     position: relative;
     width: fit-content;
     margin: auto auto;
@@ -91,9 +101,11 @@ h1{
     margin: 0 auto;
 }
 
-.next-cancel-button-wraper {
+.next-cancel-button-wrapper {
     display: flex;
     justify-content: space-between;
+    Width: fit-content; /*adicionado*/
+    margin: 0 auto; /*adicionado*/
 }
 
 /* botão positivo */
@@ -106,6 +118,7 @@ h1{
     box-shadow: var(--bs);
     background-color: var(--clr-accent);
     color: var(--clr-dark);
+    Margin-left: 1em; /* margin adicionada*/
 }
 
 .next-button:hover {
@@ -150,27 +163,75 @@ h1{
    color: var(--clr-dark);
 }
 
+/*botão upload de arquivos*/
+.upload-button-wrapper {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.button-upload{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    transition: 250ms cubic-bezier(.5, 0, .5, 1);
+
+}
+
+.button-upload:hover {
+    transform: scale(1.1);
+}
+
+.button-upload i {
+    font-size: 50px;
+    margin-bottom: 0.1em;
+}
+
+.button-upload span {
+    width: 100%;
+    text-align: center;
+    font-weight: 500px;
+    padding: 3px;
+    background-color: var(--clr-accent);
+    border-radius: 7px;
+}
 
 /* ---------- FORMS ---------- */
 
+/* box de senha do span box */
 .input-passw-box {
     margin-bottom: 1rem;
     height: 2em;
     border-radius: 5px;
 }
 
-label {
-    margin-left: 3px;
-    font-size: 1.1em;
+
+/* box generica */
+.generic-form label {
+    font-size: 1em;
+
 }
 
-.input-pesquisa{
+.input-generic-box {
+    height: 1.9em;
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: 0.5em;
+}
+
+/* box de pesquisa */
+.input-search-box {
     height: 1.8em;
     width: 100%;
     border-radius: 7px;
     margin-bottom: 1.5rem;
 }
 
+/* header */
 .logo-wrapper {
     display: relative;
     width: min-content;
@@ -188,15 +249,15 @@ label {
 header {padding: .7em;
 }
 
-.container {
-    padding: .7em;
-}
 /* ----------- NAVBAR ------------ */
 
 .nav {
     position: fixed;
-    background-color: var(--clr-bg-dark);
+    /* background-color: var(--clr-bg-dark); */
+    background: hsl(0, 0%, 100 / .1);
+    background: rgb(0, 0, 0, .7);
     color: var(--clr-light);
+    backdrop-filter: blur(.4em);
     top: 0;
     bottom: 0;
     left: 20%;
@@ -229,7 +290,9 @@ header {padding: .7em;
 }
 
 .nav-toggle{
+    overflow: hidden;
     padding: .7em;
+    border-radius: 4px;
     background-color: transparent;
     /* border: 0; */
     cursor: pointer;
@@ -237,6 +300,13 @@ header {padding: .7em;
     right: .7em;
     top: 2.8em;
     z-index: 150;
+}
+
+.nav-open .background-page-toda {
+    position: fixed;
+    inset: 0;
+    background:rgb(53, 53, 53, 0.6);
+    backdrop-filter: blur(.2em);
 }
 
 .nav-open .nav {
@@ -286,12 +356,12 @@ footer {
 
 }
 
-.marca-wraper {
+.marca-wrapper {
     width: fit-content;
     margin: 0 auto;
 }
 
-.marca-wraper p {
+.marca-wrapper p {
     margin: 0;
 }
 
@@ -345,3 +415,39 @@ footer {
 .del-button {
     all: unset;
 }
+#fundo {
+    opacity: 0.7;
+    background-color: var(--clr-bg-dark);
+    background: var(--clr-dark);
+    filter: blur(0.2em);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    display: none;
+    
+  }
+  
+  #modal {
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    margin: -75px 0 0 -75px;
+    position: absolute;
+    background-color: var(--clr-bg-light);
+    border-radius: 5px;
+    z-index: 99;
+    display: none;
+    float:inline-end;
+    text-align: center;
+    padding-top: 2%;
+  }
+  .texto-aviso{
+      text-align: center;
+      padding-top: 15%;
+      font-size: 18px;
+      font-weight: bold;
+  }
