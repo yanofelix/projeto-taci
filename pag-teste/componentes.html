@@ -4,21 +4,45 @@
         <meta charset="UTF-8">
         <title>Teste componentes</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../assets/css/administrador-style.css">
         <link rel="stylesheet" href="../assets/css/geral-styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     </head>
-    <body class="page-teste">
-        <div class="page-wraper">
+    <body>
+        
+
+        <!-- Botão Nav bar-->
+        <header>
+        <div class="logo-wrapper">
+            <img src="../assets/img/logo-taci-menor.png" alt="">
+            <div class="linha"></div>
+                 <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburguer"></span>
+        </button>
+        </div>
+
+        <!-- navbar -->
+        <nav class="nav">
+            <div class="background-page-toda"></div>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Logistas</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Aprendizados</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Dicas e Produtos</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Bonificações</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Logout</a></li>
+            </ul>
+        </nav>
+        </header>
+        <section class="page-teste">
             <input class="cta-button" type="submit" value="Acessar"/>
             <div class="span-box">
                 <h2>Você relamente quer fazer esta ação?</h2>
 
                 <input class="input-passw-box" type="password" name="senha">
 
-                <div class="next-cancel-button-wraper">
+                <div class="next-cancel-button-wrapper">
                     <input class="cancel-button" type="submit" value="cancelar">
                     <input class="next-button" type="submit" value="próximo">
                 </div>
@@ -34,18 +58,6 @@
             <div class="linha"></div>
             <label for="senha">Senha</label><br>
             <input class="input-login-box" type="password" name="senha" id="senha">
-
-            <!-- navbar -->
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Logistas</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Aprendizados</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Dicas e Produtos</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Bonificações</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Logout</a></li>
-                </ul>
-            </nav>
-        </div>
+        </section>
     </body>
 </html>
