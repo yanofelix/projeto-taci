@@ -402,10 +402,11 @@ footer {
     display: none;
     float:inline-end;
     text-align: center;
+    padding-top: 2%;
   }
   .texto-aviso{
       text-align: center;
-      padding-top: 25%;
+      padding-top: 15%;
       font-size: 18px;
       font-weight: bold;
   }
