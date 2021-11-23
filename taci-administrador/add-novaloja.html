@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar nova loja</title>
+    <link rel="stylesheet" href="../assets/css/geral-styles.css">
+    <link rel="stylesheet" href="../assets/css/login-style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-wrapper">
+            <img src="../assets/img/logo-taci-menor.png" alt="">
+            <div class="linha"></div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburguer"></span>
+            </button>
+        </div>
+            <!-- navbar -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Lojistas</a></li>
+                    <!--Alterar para Lojista-->
+                    <li class="nav__item"><a href="#" class="nav__link">Aprendizados</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Dicas e Produtos</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Bonificações</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Logout</a></li>
+                </ul>
+            </nav>   
+    </header>
+    <section class="container">
+        <div>
+            <h1>Adicionar nova loja</h1>
+            <div class="upload-img-wrapper">
+                <img class="button-upload" src="../assets/img/img-upload-arquivos.png" alt="botao-upload">
+            </div>
+            <p class="aviso-upload">Clique ou arraste para enviar a imagem</p>
+        </div>
+        <div class="font-box">
+            <form action="formulario">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <label for="cnpj">Cnpj:</label><br>
+                <input class="input-login-box" type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-000"
+                    required maxlength="16"><br>
+                <label for="cnpj">Nome da loja:</label><br>
+                <input class="input-login-box" type="text" id="nome da loja" name="nome da loja"
+                    placeholder="Insira aqui" required maxlength="30"><br>
+                <label for="cnpj">Endereço:</label><br>
+                <input class="input-login-box" type="text" id="Endereço" name="Endereço" placeholder="Insira aqui"
+                    required maxlength="50"><br>
+                <label for="cnpj">Telefone:</label><br>
+                <input class="input-login-box" type="text" id="telefone" name="telefone" placeholder="(00)0000-0000"
+                    required maxlength="12"><br>
+                <label for="Celular">Celular:</label><br>
+                <input class="input-login-box" type="text" id="Celular" name="Celular" placeholder="(00)0000-0000"
+                    required maxlength="12"><br>
+                <label for="Celular">Responsável:</label><br>
+                <input class="input-login-box" type="text" id="responsavel" name="responsavel" placeholder="Insira aqui"
+                    required maxlength="20"><br>
+                <label for="Celular">E-mail:</label><br>
+                <input class="input-login-box" type="text" id="e-mail" name="e-mail" placeholder="Insira aqui" required
+                    maxlength="30"><br>
+                <div class="next-cancel-button-wrapper">
+                    <button class="cancel-button" type="submit" value="cancelar">Cancelar</button>
+                    <a href="#" class="salvar" onclick="abrirModal();"><button type="button" class="next-button"
+                            id="botao">Salvar</button></a>
+                    <div id="fundo"></div>
+                    <div id="modal">
+                        <a href="#" class="fechar" onclick="fecharModal();">Fechar</a>
+                        <div class="texto-aviso">
+                            <p>Loja adicionada com sucesso!</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </form>
+    </section>
+
+    <footer>
+
+        <div class="marca-wraper">
+            <p>Powered by C4NGAÇO SYSTEMS</p>
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="../assets/js/geral.js"></script>
+
+</body>
+
+</html>
