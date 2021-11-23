@@ -6,6 +6,8 @@ navToggle.addEventListener('click', () => document.body.classList.toggle('nav-op
 navLinks.forEach(link => {
     link.addEventListener('click', () => document.body.classList.remove('nav-open'));
 })
+
+/* Caixa de aviso (ação feita com sucesso)*/ 
 function fecharModal()
 {
   document.getElementById('fundo').style.display = 'none';
@@ -20,5 +22,5 @@ function abrirModal()
 var inputs = $('input').on('keyup', verificarInputs);
 function verificarInputs() {
     const preenchidos = inputs.get().every(({value}) => value)
-    $('button-button-direita').prop('disabled', !preenchidos);
+    $('button').prop('disabled', !preenchidos);
 }
