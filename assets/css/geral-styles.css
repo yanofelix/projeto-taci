@@ -29,6 +29,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* container da página */
+.container {
+    padding: .7em;
+}
 
 /* --------- TIPOGRAFIA --------- */
 h1{
@@ -100,6 +104,8 @@ h1{
 .next-cancel-button-wrapper {
     display: flex;
     justify-content: space-between;
+    Width: fit-content; /*adicionado*/
+    margin: 0 auto; /*adicionado*/
 }
 
 /* botão positivo */
@@ -112,6 +118,7 @@ h1{
     box-shadow: var(--bs);
     background-color: var(--clr-accent);
     color: var(--clr-dark);
+    Margin-left: 1em; /* margin adicionada*/
 }
 
 .next-button:hover {
@@ -156,9 +163,46 @@ h1{
    color: var(--clr-dark);
 }
 
+/*botão upload de arquivos*/
+.upload-button-wrapper {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.button-upload{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    transition: 250ms cubic-bezier(.5, 0, .5, 1);
+
+}
+
+.button-upload:hover {
+    transform: scale(1.1);
+}
+
+.button-upload i {
+    font-size: 50px;
+    margin-bottom: 0.1em;
+}
+
+.button-upload span {
+    width: 100%;
+    text-align: center;
+    font-weight: 500px;
+    padding: 3px;
+    background-color: var(--clr-accent);
+    border-radius: 7px;
+}
 
 /* ---------- FORMS ---------- */
 
+/* box de senha do span box */
 .input-passw-box {
     margin-bottom: 1rem;
     height: 2em;
@@ -166,18 +210,20 @@ h1{
 }
 
 
+/* box generica */
 .generic-form label {
     font-size: 1em;
 
 }
 
 .input-generic-box {
-    height: 1.7em;
+    height: 1.9em;
     width: 100%;
     border-radius: 7px;
     margin-bottom: 0.5em;
 }
 
+/* box de pesquisa */
 .input-search-box {
     height: 1.8em;
     width: 100%;
@@ -185,6 +231,7 @@ h1{
     margin-bottom: 1.5rem;
 }
 
+/* header */
 .logo-wrapper {
     display: relative;
     width: min-content;
@@ -202,9 +249,6 @@ h1{
 header {padding: .7em;
 }
 
-.container {
-    padding: .7em;
-}
 /* ----------- NAVBAR ------------ */
 
 .nav {
@@ -371,3 +415,39 @@ footer {
 .del-button {
     all: unset;
 }
+#fundo {
+    opacity: 0.7;
+    background-color: var(--clr-bg-dark);
+    background: var(--clr-dark);
+    filter: blur(0.2em);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    display: none;
+    
+  }
+  
+  #modal {
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    margin: -75px 0 0 -75px;
+    position: absolute;
+    background-color: var(--clr-bg-light);
+    border-radius: 5px;
+    z-index: 99;
+    display: none;
+    float:inline-end;
+    text-align: center;
+    padding-top: 2%;
+  }
+  .texto-aviso{
+      text-align: center;
+      padding-top: 15%;
+      font-size: 18px;
+      font-weight: bold;
+  }
