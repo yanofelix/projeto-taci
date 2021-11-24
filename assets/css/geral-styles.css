@@ -231,7 +231,43 @@ h1{
     margin-bottom: 1.5rem;
 }
 
-/* header */
+/* checkbox */
+.form-check{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.checkbox-wrapper {
+    margin-bottom: .6em;
+ }
+
+.form-check label,
+.form-radio label {    
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: .3em;
+}
+
+ input[type="checkbox"],
+ input[type="radio"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+ }
+
+/* radio button  */
+ .form-radio {
+     display: flex;
+     width: 100%;
+ }
+
+ .radio-wrapper + .radio-wrapper {
+    margin-left: 1.5em;
+ }
+
+
+/* ------ HEADER -------- */
 .logo-wrapper {
     display: relative;
     width: min-content;
