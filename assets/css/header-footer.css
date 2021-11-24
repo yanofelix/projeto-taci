@@ -4,7 +4,7 @@
     width: min-content;
 }
 
-.linha {
+.logo-wrapper > .linha {
     width: 45%;
     height: 1.5px;
     margin: 1em auto 0;
