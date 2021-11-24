@@ -307,6 +307,7 @@ header {padding: .7em;
     inset: 0;
     background:rgb(53, 53, 53, 0.6);
     backdrop-filter: blur(.2em);
+    z-index: 99;
 }
 
 .nav-open .nav {
