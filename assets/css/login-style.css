@@ -80,3 +80,11 @@ h1 {
     margin-left: 3px;
     font-size: 1.1em;
 }
+
+/*esqueci senha*/
+
+.esqueci-senha {
+    text-align: center;
+    align-content: center;
+    margin-top: 1em;
+}
