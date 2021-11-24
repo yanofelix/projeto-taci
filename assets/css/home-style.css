@@ -1,36 +1,4 @@
-/* Váriaveis */
-:root {
-    height: 100%;
-    scroll-behavior: smooth;
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Roboto', sans-serif;
-
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #EB8FA9;
-    --clr-bg-dark: rgb(53, 53, 53);
-    --clr-bg-light: #f5f5f5;
-
-}
-
-.horizontal-scroll a{
-    color: var(--clr-dark);
-    text-decoration: none;
-}
-
-/* --------- TIPOGRAFIA --------- */
-h1{
-    text-align: center;
-}
-
-h2{
-    margin-top: 2em;
-}
-
-
 /*--------- Horizontal scroll --------*/
-
-
 .content{
     margin-top: 2em;
 }
@@ -48,11 +16,14 @@ h2{
     overflow-x: scroll;
     overflow-y: hidden;
     z-index: 98;
+}
 
+.horizontal-scroll a{
+    color: var(--cor-escura);
+    text-decoration: none;
 }
 
 /*featured products container*/
-
 .product-container{
     display: flex;
     justify-content: flex-start;
@@ -92,7 +63,6 @@ h2{
 }
 
 /*bonus-container*/
-
 .bonus-container{
     display: flex;
     justify-content: flex-start;
@@ -114,11 +84,10 @@ h2{
     border-radius: 3%;
     border: thin solid silver;
     overflow: hidden;
-    background-color: var(--clr-bg-light);
+    background-color: var(--cor-background-clara);
 }
 
 /*salesman*/
-
 .salesman-ranking-container{
     display: flex;
     justify-content: flex-start;
@@ -156,4 +125,3 @@ h2{
     text-overflow: ellipsis;
     width: 160px;
 }
-

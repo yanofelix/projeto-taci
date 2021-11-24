@@ -1,0 +1,12 @@
+:root {
+    --font-family-primary: 'Source Sans Pro', sans-serif;
+    --font-family-secondary: 'Roboto', sans-serif;
+
+    --cor-clara: #fff;
+    --cor-escura: #303030;
+    --cor-principal: #EB8FA9;
+    --cor-background-escura: rgb(53, 53, 53);
+    --cor-background-clara: #f5f5f5;
+    --box-shadow: red;
+}
+
