@@ -246,6 +246,7 @@
 .del-button {
     all: unset;
 }
+
 #fundo {
     opacity: 0.7;
     background-color: var(--cor-backgrund-escuro);
