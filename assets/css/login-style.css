@@ -12,7 +12,7 @@
     min-width: 300px;
     margin: 1em auto;
     padding: 0 0.7em;
-    background-color: var(--clr-bg-light);
+    background-color: var(--cor-background-clara);
     border-radius: 10px;
 }
 
@@ -42,7 +42,7 @@
     width: 45%;
     height: 1.5px;
     margin: 1em auto 0;
-    background: var(--clr-bg-dark);
+    background: var(--cor-background-escura);
     opacity: .4;
 }
 

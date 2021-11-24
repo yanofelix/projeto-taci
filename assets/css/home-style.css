@@ -19,7 +19,7 @@
 }
 
 .horizontal-scroll a{
-    color: var(--clr-dark);
+    color: var(--cor-escura);
     text-decoration: none;
 }
 
@@ -84,7 +84,7 @@
     border-radius: 3%;
     border: thin solid silver;
     overflow: hidden;
-    background-color: var(--clr-bg-light);
+    background-color: var(--cor-background-clara);
 }
 
 /*salesman*/

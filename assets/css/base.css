@@ -11,7 +11,7 @@
 
 body {
     margin: 0;
-    background: var(--cor-background-claro);
+    background: var(--cor-background-clara);
     color: var(--cor-escura);
     font-family: var(--font-family-secondary);
     min-height: 100%;

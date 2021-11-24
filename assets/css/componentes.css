@@ -7,7 +7,7 @@
     width: 220px;
     height: fit-content;
     padding: 1rem 1rem;
-    background-color: var(--cor-background-claro);
+    background-color: var(--cor-background-clara);
     text-align: center;
     border-radius: 5px;
     border: #414141 solid 2px;
@@ -27,7 +27,7 @@
     display: block;
     font-size: 1.5em;
     color: var(--cor-clara);
-    background: var(--cor-backgrund-escuro);
+    background: var(--cor-background-escura);
     width: 100%;
     height: 2.5em;
     border-radius: 6px;
@@ -249,7 +249,7 @@
 
 #fundo {
     opacity: 0.7;
-    background-color: var(--cor-backgrund-escuro);
+    background-color: var(--cor-background-escura);
     background: var(--cor-escura);
     filter: blur(0.2em);
     position: fixed;
@@ -269,7 +269,7 @@
     top: 50%;
     margin: -75px 0 0 -75px;
     position: absolute;
-    background-color: var(--cor-background-claro);
+    background-color: var(--cor-background-clara);
     border-radius: 5px;
     z-index: 99;
     display: none;
