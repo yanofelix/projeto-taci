@@ -288,16 +288,12 @@ button > a:visited {
       font-size: 18px;
       font-weight: bold;
   }
-<<<<<<< HEAD
 
-  /*ajuste caixa de aviso deletar card*/
+  /* ajuste caixa de aviso deletar card */
   .p-deletar-card{
     text-align: center;
     padding-top: 0%;
     padding-bottom: 20%;
     font-size: 15px;
     font-weight: bold;
-
   }
-=======
->>>>>>> 98aa2b73cd64091d1bd79ef97c8eaea369385ce2
