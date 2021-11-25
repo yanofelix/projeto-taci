@@ -283,3 +283,13 @@
       font-size: 18px;
       font-weight: bold;
   }
+
+  /*ajuste caixa de aviso deletar card*/
+  .p-deletar-card{
+    text-align: center;
+    padding-top: 0%;
+    padding-bottom: 20%;
+    font-size: 15px;
+    font-weight: bold;
+
+  }
