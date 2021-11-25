@@ -70,22 +70,21 @@
 
 /* botão adicionar */
 .add-button-wrapper {
-    display: flex;
-    align-items: center;
-    padding: 0 0.5em;
-
-}
-
-.add-button-wrapper > i {
-    margin-right: 0.5em;
-    font-size: 22px;
-    
 }
 
 .add-button {
-    border-style: none;
+    border: 0;
+    background: transparent;
     font-size: 1.5em;
-    margin-bottom:1rem;
+
+    padding: 0;
+
+}
+
+.add-button > a > i {
+    font-size: 22px;
+    margin-right: 0.3rem;
+    
 }
 
 .add-button > a {
@@ -93,8 +92,9 @@
 }
 
 .add-button > a:visited {
-   color: var(--cor-escura);
+   color: inherit;
 }
+
 
 /*botão upload de arquivos*/
 .upload-button-wrapper {
