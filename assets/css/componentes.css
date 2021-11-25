@@ -70,15 +70,14 @@
 
 /* botão adicionar */
 .add-button-wrapper {
+    margin: .5rem;
 }
 
 .add-button {
     border: 0;
     background: transparent;
     font-size: 1.5em;
-
     padding: 0;
-
 }
 
 .add-button > a > i {
@@ -161,7 +160,7 @@
     height: 1.8em;
     width: 100%;
     border-radius: 7px;
-    margin-bottom: 1.5rem;
+    margin-bottom: .7rem;
 }
 
 /* checkbox */
@@ -199,6 +198,12 @@
     margin-left: 1.5em;
  }
 
+ /* ----------CARDS ---------- */
+ .cards {
+     display: grid;
+     gap: 0.5em;
+ }
+
 .card {
     width: 100%;
     height: 95px;
@@ -206,7 +211,6 @@
     flex-direction: row;
     border: 2px solid var(--cor-escura);
     border-radius: 10px;
-    margin-bottom: .5em;
 }
 
 .img-card-wrapper {
