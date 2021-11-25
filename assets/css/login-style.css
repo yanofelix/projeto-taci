@@ -2,7 +2,7 @@
 #wrapper-login {
     width: 100%;
     max-width: 400px;
-    margin: 20% auto 0;
+    margin: 1em auto 0;
     padding: 0 1rem;
     background-color: var(--cor-background-clara);
     border-radius: 10px;
