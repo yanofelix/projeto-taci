@@ -8,7 +8,7 @@
     <title>Adicionar nova loja</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
@@ -36,12 +36,12 @@
         </nav>
     </header>
     <section class="container">
-        <h1>Editar dados da loja</h1>  
-        <div class="upload-button-wrapper">                          
-                <button class="button-upload"><i class="fas fa-cloud-upload-alt" ></i><span>enviar imagem</span></button>
-            </div>
+        <h1>Editar dados da loja</h1>
+        <div class="upload-button-wrapper">
+            <button class="button-upload"><i class="fas fa-cloud-upload-alt"></i><span>enviar imagem</span></button>
+        </div>
         <div class="font-box">
-            
+
             <form class="generic-form" action="formulário" method="post">
 
                 <label for="cnpj">Cnpj:</label><br>
@@ -60,19 +60,21 @@
                 <input class="input-generic-box" type="text" id="celular" name="celular" placeholder="(00)0000-0000"
                     required maxlength="12"><br>
                 <label for="responsavel">Responsável:</label><br>
-                <input class="input-generic-box" type="text" id="responsavel" name="responsavel" placeholder="Insira aqui"
-                    required maxlength="20"><br>
+                <input class="input-generic-box" type="text" id="responsavel" name="responsavel"
+                    placeholder="Insira aqui" required maxlength="20"><br>
                 <label for="e-mail">E-mail:</label><br>
-                <input class="input-generic-box" type="text" id="e-mail" name="e-mail" placeholder="seuemail@email.com" required
-                    maxlength="100"><br>
+                <input class="input-generic-box" type="text" id="e-mail" name="e-mail" placeholder="seuemail@email.com"
+                    required maxlength="100"><br>
+                <div class="next-cancel-button-wrapper">
+                    <a href="lojas-associadas.html"><button class="cancel-button" type="button">Cancelar</button></a>
+
+                    <a class="salvar" onclick="abrirModal();"><button type="button" id="botao" class="next-button"
+                            disabled="disabled">Salvar</button></a>
+                </div>
+
             </form>
         </div>
-        <div class="next-cancel-button-wrapper">
-            <a href="lojas-associadas.html"><button class="cancel-button" type="button" id="botao"
-                    value="cancelar">Cancelar</button></a>
 
-            <a href="#" class="salvar" onclick="abrirModal();"><button type="button" class="next-button"
-                    >Salvar</button></a>
         </div>
         <div id="fundo"></div>
         <div id="modal">
