@@ -21,6 +21,14 @@
 }
 
 /* ---------- BOTÕES ---------- */
+/* todo <a> dentro de qualquer botão */
+button > a {
+    text-decoration: none;
+}
+
+button > a:visited {
+   color: inherit;
+}
 
 /* botão call to action */
 .cta-button {
@@ -85,15 +93,6 @@
     margin-right: 0.3rem;
     
 }
-
-.add-button > a {
-    text-decoration: none;
-}
-
-.add-button > a:visited {
-   color: inherit;
-}
-
 
 /*botão upload de arquivos*/
 .upload-button-wrapper {
@@ -205,16 +204,16 @@
  }
 
 .card {
+    display: flex;
     width: 100%;
     height: 95px;
-    display: flex;
-    flex-direction: row;
+    background-color: var(--cor-clara);
     border: 2px solid var(--cor-escura);
-    border-radius: 10px;
+    border-radius: 13px;
 }
 
 .img-card-wrapper {
-    width: 110px;
+    width: 160px;
     border-radius: 12px 0 0 12px;
     overflow: hidden;
 }   
@@ -251,6 +250,7 @@
     all: unset;
 }
 
+/* modal JS fundo do span-box */
 #fundo {
     opacity: 0.7;
     background-color: var(--cor-background-escura);
@@ -281,6 +281,7 @@
     text-align: center;
     padding-top: 2%;
   }
+
   .texto-aviso{
       text-align: center;
       padding-top: 15%;
