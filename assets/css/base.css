@@ -21,7 +21,7 @@ body {
 
 /* container da página */
 .container {
-    padding: .7em;
+    padding: 1em;
 }
 
 /* --------- TIPOGRAFIA --------- */
@@ -29,6 +29,9 @@ h1{
     text-align: center;
 }
 
+.container > h1 {
+    margin-bottom: 1em;
+}
 h2{
     margin-top: 2em;
 }

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Lojistas Associados</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
@@ -16,9 +17,9 @@
         <div class="logo-wrapper">
             <img src="../assets/img/logo-taci-menor.png" alt="">
             <div class="linha"></div>
-                 <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburguer"></span>
-        </button>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburguer"></span>
+            </button>
         </div>
 
         <!-- navbar -->
@@ -38,7 +39,7 @@
         <h1>Lojas Associadas</h1>
         <input type="search" class="input-search-box" placeholder="Pesquisar Lojas">
         <div class="add-button-wrapper">
-            <button class="add-button"><a href="add-novaloja.html"><i class="fas fa-plus-circle"></i> &nbspAdicionar Lojista</a></button>
+            <button class="add-button"><a href="add-novaloja.html"><i class="fas fa-plus-circle"></i>Adicionar Lojista</a></button>
         </div>
         <div class="cards">
             <!-- card -->
@@ -50,7 +51,19 @@
                     <p>Aprendizados</p>
                 </div>
                 <div class="edit-del-button-wrapper">
-                    <button class="edit-button"><i class="fas fa-edit"></i></button>
+                    <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
+                    <button class="del-button"><a class="#" onclick="abrirModal();"><i class="fas fa-trash-alt"></i></a></button>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card">
+                <div class="img-card-wrapper"><img src="../assets/img/hangers-g4cc599aad_640.jpg" alt=""></div>
+                <div class="conteudo">
+                    <p>Nome da loja</p>
+                    <p>Vendas: 999 unidades</p>
+                    <p>Aprendizados</p>
+                </div>
+                <div class="edit-del-button-wrapper">
                     <button class="del-button"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
@@ -63,7 +76,7 @@
                     <p>Aprendizados</p>
                 </div>
                 <div class="edit-del-button-wrapper">
-                    <button class="edit-button"><i class="fas fa-edit"></i></button>
+                    <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
                     <button class="del-button"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
@@ -76,7 +89,7 @@
                     <p>Aprendizados</p>
                 </div>
                 <div class="edit-del-button-wrapper">
-                    <button class="edit-button"><i class="fas fa-edit"></i></button>
+                    <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
                     <button class="del-button"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
@@ -89,7 +102,7 @@
                     <p>Aprendizados</p>
                 </div>
                 <div class="edit-del-button-wrapper">
-                    <button class="edit-button"><i class="fas fa-edit"></i></button>
+                    <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
                     <button class="del-button"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
@@ -102,7 +115,7 @@
                     <p>Aprendizados</p>
                 </div>
                 <div class="edit-del-button-wrapper">
-                    <button class="edit-button"><i class="fas fa-edit"></i></button>
+                    <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
                     <button class="del-button"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
@@ -115,31 +128,28 @@
                     <p>Aprendizados</p>
                 </div>
                 <div class="edit-del-button-wrapper">
-                    <button class="edit-button"><i class="fas fa-edit"></i></button>
+                    <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
                     <button class="del-button"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
-            <!-- card -->
-            <div class="card">
-                <div class="img-card-wrapper"><img src="../assets/img/hangers-g4cc599aad_640.jpg" alt=""></div>
-                <div class="conteudo">
-                    <p>Nome da loja</p>
-                    <p>Vendas: 999 unidades</p>
-                    <p>Aprendizados</p>
-                </div>
-                <div class="edit-del-button-wrapper">
-                    <button class="edit-button"><i class="fas fa-edit"></i></button>
-                    <button class="del-button"><i class="fas fa-trash-alt"></i></button>
+            <div id="fundo"></div>
+            <div id="modal">
+                <a href="lojas-associadas.html" class="fechar-sim" onclick=" return alert ('Esta loja será deletada, clique OK para confirmar')">Sim</a>         
+                
+                <a href="lojas-associadas.html" class="fechar-nao" onclick="fecharModal();">Não</a>
+                <div class="texto-aviso">
+                    <p class="p-deletar-card">Você tem certeza que deseja deletar esta loja?</p>
                 </div>
             </div>
             
-            
-        </div>
     </section>
     <footer>
-        <div class="marca-wrapper"><p>Powered by C4NGAÇO SYSTEMS</p></div>
+        <div class="marca-wrapper">
+            <p>Powered by C4NGAÇO SYSTEMS</p>
+        </div>
     </footer>
 
     <script src="../assets/js/geral.js"></script>
 </body>
+
 </html>

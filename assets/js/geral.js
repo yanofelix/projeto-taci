@@ -19,8 +19,10 @@ function abrirModal()
   document.getElementById('fundo').style.display = 'block';
   document.getElementById('modal').style.display = 'block';
 }
+
 var inputs = $('input').on('keyup', verificarInputs);
+
 function verificarInputs() {
     const preenchidos = inputs.get().every(({value}) => value)
-    $('button').prop('disabled', !preenchidos);
+    $('#botao').prop('disabled', !preenchidos);
 }
