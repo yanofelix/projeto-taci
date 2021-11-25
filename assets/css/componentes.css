@@ -218,7 +218,13 @@ button > a:visited {
     width: 160px;
     border-radius: 12px 0 0 12px;
     overflow: hidden;
-}   
+}
+
+.img-card-wrapper-video{
+    width: 160px;
+    border-radius: 12px 0 0 12px;
+    overflow: hidden;
+}
 
 .card img {
     height: 100%;
@@ -237,6 +243,12 @@ button > a:visited {
 .card .conteudo p {
     margin: 0 0 0.4em;
     padding: 0;
+}
+.titulo-card{
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    
 }
 
 .edit-del-button-wrapper{
