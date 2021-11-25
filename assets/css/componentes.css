@@ -201,6 +201,8 @@ button > a:visited {
  .cards {
      display: grid;
      gap: 0.5em;
+     padding-top: 1em;
+     padding-bottom: 1em;
  }
 
 .card {
