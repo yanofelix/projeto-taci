@@ -37,7 +37,16 @@
                 <input class="cta-button" type="submit" value="Acessar"/>
             </form>
             <div class="esqueci-senha"><a href="./esqueci-senha-adm.html">Esqueci minha senha</a></div>
-            <a href="alterar-senha.html">teste senha errada</a>
+            <button class="salvar" onclick="abrirModal();">teste senha incorreta</button>
+        </div>
+
+         <!-- Fundo modal -->
+        <div id="fundo"></div>
+        <div id="modal">
+            <div class="texto-aviso">
+                <p>Credencial incorreta!</p>
+            </div>
+            <button class="fechar" onclick="fecharModal();">Fechar</button>
         </div>
 
     </section>
@@ -47,4 +56,6 @@
 
     <!-- js -->
     <script src='https://www.google.com/recaptcha/api.js?hl=pt-br'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/geral.js"></script>
 </body>
