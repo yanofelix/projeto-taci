@@ -156,10 +156,15 @@ button > a:visited {
 
 /* box de pesquisa */
 .input-search-box {
-    height: 1.8em;
+    height: 1.8rem;
     width: 100%;
     border-radius: 7px;
     margin-bottom: .7rem;
+    background-image: url(../img/search-interface-symbol.png);
+    background-position: 0.2rem;
+    background-size: 1.1rem;
+    background-repeat: no-repeat;
+    padding: 0 1.4rem;
 }
 
 /* checkbox */
