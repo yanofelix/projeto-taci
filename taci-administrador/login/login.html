@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
     <section id="wrapper-login">
         <div class="wrapper-do-header">
             <div class="logo">
-                <div class="img-wrapper"><img src="../assets/img/logo-taci.png" alt=""></div>
+                <div class="img-wrapper"><img src="../../assets/img/logo-taci.png" alt=""></div>
                 <div class="linha-login"></div>
             </div>
             <h1>Faça o seu login administrativo</h1>
@@ -22,7 +22,7 @@
 
         <div class="entradas">
             <h3 class="entradas__subtitle"> Insira abaixo as suas credenciais</h3>
-            <form class=login-form>
+            <form class=login-form action="alterar-senha.html">
                 <!-- e-mail -->
                 <div class="login-box-wrapper">
                     <label for="e-mail">E-mail</label><br>
@@ -37,6 +37,7 @@
                 <input class="cta-button" type="submit" value="Acessar"/>
             </form>
             <div class="esqueci-senha"><a href="./esqueci-senha-adm.html">Esqueci minha senha</a></div>
+            <a href="alterar-senha.html">aqiu</a>
         </div>
 
     </section>
@@ -45,5 +46,10 @@
     </footer>
 
     <!-- js -->
+    <script>
+        function myFunction() {
+          window.location.href="alterar-senha.html";  
+        }
+      </script>
     <script src='https://www.google.com/recaptcha/api.js?hl=pt-br'></script>
 </body>
