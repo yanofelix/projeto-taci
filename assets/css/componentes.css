@@ -191,6 +191,7 @@ button > a:link {
     margin-left: 90%;
     margin-top: -20%;
     
+    
 }
 
 .filtro-button {
@@ -198,8 +199,10 @@ button > a:link {
     padding: 0%;
     margin-right: 50px;
     margin-bottom: 0.6em;
-    
+    color: var(--cor-background-escura);
+    font-weight: bolder;
 }
+
 /* ---------- FORMS ---------- */
 
 /* box de senha do span box */
