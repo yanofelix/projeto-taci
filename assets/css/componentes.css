@@ -161,7 +161,6 @@ button > a:link {
     height: 1.8rem;
     width: 100%;
     border-radius: 7px;
-    margin-bottom: .7rem;
     background-image: url(../img/search-interface-symbol.png);
     background-position: 0.2rem;
     background-size: 1.1rem;
@@ -340,3 +339,8 @@ button > a:link {
     font-weight: bold;
   }
   
+/*GAMBIARRATION ENQUANTO NÃO TEM JS ONCLICK"*/
+.cards a{
+    color: var(--cor-escura);
+    text-decoration: none;
+}
