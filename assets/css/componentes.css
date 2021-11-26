@@ -20,6 +20,33 @@
     font-size: 18px;
 }
 
+/* span box edicao */
+
+#box-edicao {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    min-width: 300px;
+    max-width: 600px;
+    width: 50% ;
+    background: rgba(100, 100, 100, .5);
+    
+    
+
+}
+
+.box-edicao__wrappers {
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr;
+    gap: 1em;
+    margin-bottom: 1em; 
+}
+
+.box-edicao__wrappers > input {
+    border-radius: 5px;
+}
+
 /* ---------- BOTÕES ---------- */
 /* todo <a> dentro de qualquer botão */
 button > a {
@@ -307,7 +334,7 @@ button > a:link {
     z-index: 98;
     top: 0;
     left: 0;
-    display: none;
+    display: block;
     
   }
   
