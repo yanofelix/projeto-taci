@@ -263,14 +263,15 @@ button > a:link {
     padding: 0;
 }
 .card__titulo{
-    text-align: center;
     font-style: italic;
     text-decoration: underline;
     margin: 0 0 0.5em;
 }
 
 .card__descricao {
-    text-align: center;
+    text-overflow: ellipsis;
+    max-height: 5ch;
+    overflow:hidden;
 }
 
 .edit-del-button-wrapper{
