@@ -180,12 +180,17 @@ button > a:link {
 /* card com botão de filtros */
 
 .fechar-button {
-    width: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    background-color: var(--cor-principal);
     border-radius: 40px;
     text-align: center;
     padding: 0;
-    margin-left: 160px;
-    margin-top: 0%;
+    margin-bottom: 10%;
+    margin-left: 90%;
+    margin-top: -20%;
+    
 }
 
 /* ---------- FORMS ---------- */
