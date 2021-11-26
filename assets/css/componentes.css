@@ -158,10 +158,14 @@ button > a:link {
 
 /* box de pesquisa */
 .input-search-box {
-    height: 1.8em;
+    height: 1.8rem;
     width: 100%;
     border-radius: 7px;
-    margin-bottom: .7rem;
+    background-image: url(../img/search-interface-symbol.png);
+    background-position: 0.2rem;
+    background-size: 1.1rem;
+    background-repeat: no-repeat;
+    padding: 0 1.4rem;
 }
 
 /* checkbox */
@@ -193,6 +197,7 @@ button > a:link {
  .form-radio {
      display: flex;
      width: 100%;
+     font-size: .8em;
  }
 
  .radio-wrapper + .radio-wrapper {
@@ -214,13 +219,15 @@ button > a:link {
     background-color: var(--cor-clara);
     border: 2px solid var(--cor-escura);
     border-radius: 13px;
+    margin-top: 8px;
 }
 
 .img-card-wrapper {
-    width: 160px;
+    width: 140px;
     border-radius: 12px 0 0 12px;
     overflow: hidden;
     position: relative;
+    padding:5px 0;
 }
 
 .img-card-wrapper > i {
@@ -257,14 +264,15 @@ button > a:link {
     padding: 0;
 }
 .card__titulo{
-    text-align: center;
     font-style: italic;
     text-decoration: underline;
     margin: 0 0 0.5em;
 }
 
 .card__descricao {
-    text-align: center;
+    text-overflow: ellipsis;
+    max-height: 5ch;
+    overflow:hidden;
 }
 
 .edit-del-button-wrapper{
@@ -279,6 +287,10 @@ button > a:link {
 .del-button {
     all: unset;
     cursor: pointer;
+}
+
+.card h2{
+    margin-top: 1px;
 }
 
 /* modal JS fundo do span-box */
@@ -329,3 +341,29 @@ button > a:link {
     font-weight: bold;
   }
   
+/*Filters*/
+.filterSec{
+    width: 100%;
+    margin-top: .2em;  
+}
+
+.filterSec button{
+    margin: 4px 0;
+    border-radius: 7px;
+    outline: thin;
+    background-color: white;
+    cursor: pointer;
+}
+
+.filterSec button:hover{
+    background-color: var(--cor-principal-fraca);
+}
+
+.filterSec button:active{
+    background-color: var(--cor-principal);
+}
+/*GAMBIARRATION ENQUANTO NÃO TEM JS ONCLICK"*/
+.cards a{
+    color: var(--cor-escura);
+    text-decoration: none;
+}
