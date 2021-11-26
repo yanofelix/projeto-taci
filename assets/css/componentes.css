@@ -39,7 +39,7 @@
 
 .box-edicao__wrappers {
     display: grid;
-    grid-template-rows: 1fr 1fr 5fr;
+    grid-template-rows: 1fr 1fr 6fr;
     gap: 1em;
     margin-bottom: 1em; 
     
