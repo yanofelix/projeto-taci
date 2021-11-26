@@ -26,7 +26,9 @@ button > a {
     text-decoration: none;
 }
 
-button > a:visited {
+
+button > a:visited,
+button > a:link {
    color: inherit;
 }
 
@@ -218,7 +220,23 @@ button > a:visited {
     width: 160px;
     border-radius: 12px 0 0 12px;
     overflow: hidden;
-}   
+    position: relative;
+}
+
+.img-card-wrapper > i {
+    position: absolute;
+    top: 33%;
+    left: 40%;
+    font-size: 40px;
+    color: var(--cor-background-clara);
+    opacity: 0.6;
+    transition: 200ms;  
+}
+
+.img-card-wrapper > i:hover {
+    transform: scale(1.1);
+
+}
 
 .card img {
     height: 100%;
@@ -238,6 +256,16 @@ button > a:visited {
     margin: 0 0 0.4em;
     padding: 0;
 }
+.card__titulo{
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 0 0 0.5em;
+}
+
+.card__descricao {
+    text-align: center;
+}
 
 .edit-del-button-wrapper{
     display: flex;
@@ -250,6 +278,7 @@ button > a:visited {
 .edit-button,
 .del-button {
     all: unset;
+    cursor: pointer;
 }
 
 /* modal JS fundo do span-box */
@@ -299,3 +328,4 @@ button > a:visited {
     font-size: 15px;
     font-weight: bold;
   }
+  
