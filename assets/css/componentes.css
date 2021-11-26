@@ -261,8 +261,6 @@ button > a:link {
     font-style: italic;
     text-decoration: underline;
     margin: 0 0 0.5em;
-
-    
 }
 
 .card__descricao {
@@ -330,3 +328,4 @@ button > a:link {
     font-size: 15px;
     font-weight: bold;
   }
+  
