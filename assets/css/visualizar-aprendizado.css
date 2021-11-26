@@ -1,0 +1,24 @@
+.content-view{
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+    margin-top: 1.5em;
+}
+
+.video-player{
+    max-width: 100%;
+    max-height: 250px;
+    margin-top: 1em;
+}
+
+.video-player img{
+    max-width: 100%;
+    max-height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-description p{
+display: inline;
+}
