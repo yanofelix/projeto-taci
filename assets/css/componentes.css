@@ -222,10 +222,11 @@ button > a:link {
 }
 
 .img-card-wrapper {
-    width: 160px;
+    width: 140px;
     border-radius: 12px 0 0 12px;
     overflow: hidden;
     position: relative;
+    padding:5px 0;
 }
 
 .img-card-wrapper > i {
