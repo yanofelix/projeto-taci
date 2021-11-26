@@ -88,11 +88,20 @@
             <div class="next-cancel-button-wrapper">
 
                 <input class="cancel-button" type="submit" value="cancelar">
-                <input class="next-button" type="submit" value="próximo">
+                <a class="salvar" onclick="abrirModal();"><input class="next-button" type="button" value="Salvar"></a>
             </div>
-        </form>
 
+        </form>
+            <div id="fundo"></div>
+        <div id="modal">
+            <a href="../taci-administrador/Home-Aprendizado.html" class="fechar" onclick="fecharModal();">Fechar</a>
+            <div class="texto-aviso">
+                <p>Ação realizada com sucesso!</p>
+            </div>
+        </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/geral.js"></script> 
 </body>
 
 </html>
