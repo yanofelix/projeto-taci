@@ -61,7 +61,7 @@ button > a:link {
     box-shadow: var(--bs);
     background-color: var(--cor-principal);
     color: var(--cor-escura);
-    Margin-left: 1em; /* margin adicionada*/
+    margin-left: 0.5em; /* margin adicionada*/
 }
 
 .next-button:hover {
@@ -76,6 +76,7 @@ button > a:link {
     text-align: center;
     border-radius: 7px;
     box-shadow: var(--bs);
+    margin-right: 0.5;
 }
 
 /* botão adicionar */
@@ -114,6 +115,19 @@ button > a:link {
     transition: 250ms cubic-bezier(.5, 0, .5, 1);
 
 }
+
+.span_box__upload { 
+    width: 250px;
+    height: fit-content;
+    padding-left: 0%; 
+    background-color: var(--cor-background-clara);
+    text-align: center;
+    border-radius: 5px;
+    border: #414141 solid 2px;
+    box-shadow: var(--bs);
+    
+}
+
 
 .button-upload:hover {
     transform: scale(1.1);
