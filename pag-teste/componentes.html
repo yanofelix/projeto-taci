@@ -79,12 +79,12 @@
     <div class="span-box" id="box-edicao">
         <form action="">
             <div id="fundo"></div>
-                <div class="box-edicao__wrappers">
+            <div class="box-edicao__wrappers">
                 <input class="box-edicao__title" type="text" placeholder="Titulo do vídeo" maxlength="30px">
                 <input class="box-edicao__subtitle" type="text" placeholder="Subtítulo" maxlength="50px">
                 <input class="box-edicao__descricao" type="text" placeholder="Descrição" maxlength="200px">
             </div>
-            
+
             <div class="next-cancel-button-wrapper">
 
                 <input class="cancel-button" type="submit" value="cancelar">
@@ -92,7 +92,7 @@
             </div>
 
         </form>
-            <div id="fundo"></div>
+        <div id="fundo"></div>
         <div id="modal">
             <a href="../taci-administrador/Home-Aprendizado.html" class="fechar" onclick="fecharModal();">Fechar</a>
             <div class="texto-aviso">
@@ -100,8 +100,28 @@
             </div>
         </div>
     </div>
+    <!-- Fluxo busca filtros-->
+
+    <div class="span-box" id="box-filtros">
+        <form action="">
+            <div>
+                <button><input class="fechar-button" type="submit" value="x"></button>
+            </div>
+            <div class="box-filtros__wrappers">
+                <button><input class="filtro-button" type="submit" value="Cursos"></button>
+                <button><input class="filtro-button" type="submit" value="Vendas"></button>
+                <button><input class="filtro-button" type="submit" value="Live"></button>
+                <button><input class="filtro-button" type="submit" value="Coleção"></button>
+                <button><input class="filtro-button" type="submit" value="Categoria 1"></button>
+                <button><input class="filtro-button" type="submit" value="Categoria 2"></button>
+                <button><input class="filtro-button" type="submit" value="Categoria 3"></button>
+                <button><input class="filtro-button" type="submit" value="Categoria 4"></button>
+            </div>
+        </form>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../assets/js/geral.js"></script> 
+    <script type="text/javascript" src="../assets/js/geral.js"></script>
 </body>
 
 </html>
