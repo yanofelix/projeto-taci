@@ -23,7 +23,7 @@
 /* span box edicao */
 
 #box-edicao {
-    position: fixed;
+    position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
@@ -31,7 +31,8 @@
     max-width: 600px;
     width: 50% ;
     background: rgba(100, 100, 100, .5);
-    
+    margin-top: 130px;
+    margin-left: 0%;
     
 
 }
@@ -41,6 +42,8 @@
     grid-template-rows: 1fr 1fr 5fr;
     gap: 1em;
     margin-bottom: 1em; 
+    
+    font-size: 10px;
 }
 
 .box-edicao__wrappers > input {
