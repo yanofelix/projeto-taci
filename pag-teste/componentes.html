@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Teste componentes</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../assets/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    </head>
-    <body>
-        
 
-        <!-- Botão Nav bar-->
-        <header>
+<head>
+    <meta charset="UTF-8">
+    <title>Teste componentes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+</head>
+
+<body>
+
+
+    <!-- Botão Nav bar-->
+    <header>
         <div class="logo-wrapper">
             <img src="../assets/img/logo-taci-menor.png" alt="">
             <div class="linha"></div>
-                 <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburguer"></span>
-        </button>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburguer"></span>
+            </button>
         </div>
 
         <!-- navbar -->
@@ -34,30 +36,93 @@
                 <li class="nav__item"><a href="#" class="nav__link">Logout</a></li>
             </ul>
         </nav>
-        </header>
-        <section class="page-teste">
-            <input class="cta-button" type="submit" value="Acessar"/>
-            <div class="span-box">
-                <h2>Você relamente quer fazer esta ação?</h2>
+    </header>
+    <section class="page-teste">
+        <input class="cta-button" type="submit" value="Acessar" />
+        <div class="span-box">
+            <h2>Você relamente quer fazer esta ação?</h2>
 
-                <input class="input-passw-box" type="password" name="senha">
+            <input class="input-passw-box" type="password" name="senha">
 
-                <div class="next-cancel-button-wrapper">
-                    <input class="cancel-button" type="submit" value="cancelar">
-                    <input class="next-button" type="submit" value="próximo">
-                </div>
+            <div class="next-cancel-button-wrapper">
+                <input class="cancel-button" type="submit" value="cancelar">
+                <input class="next-button" type="submit" value="próximo">
+            </div>
+        </div>
+
+        <div class="add-button-wrapper">
+            <i class="fas fa-plus-circle"></i>
+            <input class="add-button" type="submit" value="Adicionar pererê">
+        </div>
+
+        <label for="e-mail">E-mail</label><br>
+        <input class="input-login-box" type="text" id="e-mail" name="e-mail"><br>
+        <div class="linha"></div>
+        <label for="senha">Senha</label><br>
+        <input class="input-login-box" type="password" name="senha" id="senha">
+    </section><br><br>
+
+    <!-- Upload Arquivos-->
+
+    <div class="span-box">
+        <div class="upload-button-wrapper">
+            <button class="button-upload"><i class="fas fa-cloud-upload-alt"></i><span>enviar imagem</span></button>
+        </div>
+        <p>Clique ou arraste para adicionar novos arquivos.</p>
+
+        <div class="next-cancel-button-wrapper">
+            <input class="cancel-button" type="submit" value="cancelar">
+            <input class="next-button" type="submit" value="próximo">
+        </div>
+    </div> <br><br>
+
+    <div class="span-box" id="box-edicao">
+        <form action="">
+            <div id="fundo"></div>
+            <div class="box-edicao__wrappers">
+                <input class="box-edicao__title" type="text" placeholder="Titulo do vídeo" maxlength="30px">
+                <input class="box-edicao__subtitle" type="text" placeholder="Subtítulo" maxlength="50px">
+                <input class="box-edicao__descricao" type="text" placeholder="Descrição" maxlength="200px">
             </div>
 
-            <div class="add-button-wrapper">
-                <i class="fas fa-plus-circle"></i>
-                <input class="add-button" type="submit" value="Adicionar pererê">
+            <div class="next-cancel-button-wrapper">
+
+                <input class="cancel-button" type="submit" value="cancelar">
+                <a class="salvar" onclick="abrirModal();"><input class="next-button" type="button" value="Salvar"></a>
             </div>
 
-            <label for="e-mail">E-mail</label><br>
-            <input class="input-login-box" type="text" id="e-mail" name="e-mail"><br>
-            <div class="linha"></div>
-            <label for="senha">Senha</label><br>
-            <input class="input-login-box" type="password" name="senha" id="senha">
-        </section>
-    </body>
+        </form>
+        <div id="fundo"></div>
+        <div id="modal">
+            <a href="../taci-administrador/Home-Aprendizado.html" class="fechar" onclick="fecharModal();">Fechar</a>
+            <div class="texto-aviso">
+                <p>Ação realizada com sucesso!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fluxo busca / filtros-->
+
+    <div class="span-box">
+        <div>
+            <input class="fechar-button" type="submit" value="x">
+        </div>
+        <form action="">
+            <div class="box-filtros">
+                <input class="filtro-button" type="submit" value="Cursos" checked>
+                <input class="filtro-button" type="submit" value="Vendas" checked>
+                <input class="filtro-button" type="submit" value="Live" checked>
+                <input class="filtro-button" type="submit" value="Coleção" checked>
+                <input class="filtro-button" type="submit" value="Categoria 1" checked>
+                <input class="filtro-button" type="submit" value="Categoria 2" checked>
+                <input class="filtro-button" type="submit" value="Categoria 3" checked>
+                <input class="filtro-button" type="submit" value="Categoria 4" checked>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/geral.js"></script>
+</body>
+
 </html>

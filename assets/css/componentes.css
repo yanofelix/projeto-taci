@@ -20,6 +20,36 @@
     font-size: 18px;
 }
 
+/* span box edicao */
+
+#box-edicao {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    min-width: 300px;
+    max-width: 600px;
+    width: 50% ;
+    background: rgba(100, 100, 100, .5);
+    margin-top: 130px;
+    margin-left: 0%;
+    
+
+}
+
+.box-edicao__wrappers {
+    display: grid;
+    grid-template-rows: 1fr 1fr 6fr;
+    gap: 1em;
+    margin-bottom: 1em; 
+    
+    font-size: 10px;
+}
+
+.box-edicao__wrappers > input {
+    border-radius: 5px;
+}
+
 /* ---------- BOTÕES ---------- */
 /* todo <a> dentro de qualquer botão */
 button > a {
@@ -61,7 +91,7 @@ button > a:link {
     box-shadow: var(--bs);
     background-color: var(--cor-principal);
     color: var(--cor-escura);
-    Margin-left: 1em; /* margin adicionada*/
+    margin-left: 0.5em; /* margin adicionada*/
 }
 
 .next-button:hover {
@@ -76,6 +106,7 @@ button > a:link {
     text-align: center;
     border-radius: 7px;
     box-shadow: var(--bs);
+    margin-right: 0.5;
 }
 
 /* botão adicionar */
@@ -115,6 +146,19 @@ button > a:link {
 
 }
 
+.span_box__upload { 
+    width: 250px;
+    height: fit-content;
+    padding-left: 0%; 
+    background-color: var(--cor-background-clara);
+    text-align: center;
+    border-radius: 5px;
+    border: #414141 solid 2px;
+    box-shadow: var(--bs);
+    
+}
+
+
 .button-upload:hover {
     transform: scale(1.1);
 }
@@ -131,6 +175,32 @@ button > a:link {
     padding: 3px;
     background-color: var(--cor-principal);
     border-radius: 7px;
+}
+
+/* card com botão de filtros */
+
+.fechar-button {
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    background-color: var(--cor-principal);
+    border-radius: 40px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10%;
+    margin-left: 90%;
+    margin-top: -20%;
+    
+    
+}
+
+.filtro-button {
+    width: 180px;
+    padding: 0%;
+    margin-right: 50px;
+    margin-bottom: 0.6em;
+    color: var(--cor-background-escura);
+    font-weight: bolder;
 }
 
 /* ---------- FORMS ---------- */
