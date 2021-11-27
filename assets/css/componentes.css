@@ -358,6 +358,13 @@ button > a:link {
 
 }
 
+.img-ranking-wrapper {
+    position: absolute;
+    left: 37em;
+    margin-top: 8em;
+    cursor: pointer;
+}
+
 .card img {
     height: 100%;
     width: 100%;
