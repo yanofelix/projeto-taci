@@ -292,6 +292,20 @@ button > a:link {
     margin-top: 8px;
 }
 
+.cards-faq {
+    margin-top: 0.3em;
+}
+
+.card-faq {
+    width: 100%;
+    background-color: var(--cor-clara);
+    border: 2px solid var(--cor-escura);
+    border-radius: 7px;
+    padding: 0.3em 0 0.3em 0.3em;
+    font-size: 1.1em;
+    color: var(--cor-escura);
+}
+
 .img-card-wrapper {
     width: 140px;
     border-radius: 12px 0 0 12px;
