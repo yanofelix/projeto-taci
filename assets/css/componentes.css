@@ -500,3 +500,8 @@ button > a:link {
     color: var(--cor-escura);
     text-decoration: none;
 }
+
+/*nav bar dentro da página*/
+.in-page-nav p {
+    display: inline;
+}
