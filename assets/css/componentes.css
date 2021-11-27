@@ -127,6 +127,26 @@ button > a:link {
     
 }
 
+.button-ranking > .add-button-wrapper >  {
+    border: 0rem;
+    background-color: var(--cor-background-clara);
+    cursor: pointer;
+    position: relative;
+    margin: 0; 
+    display: flex;    
+    height: fit-content;
+}
+
+.button-ranking {
+    border: 0;
+    background-color: var(--cor-background-clara);
+    margin: 0; 
+    cursor: pointer;
+    position: relative;
+    padding-left: 50% ;
+
+}
+
 /*botão upload de arquivos*/
 .upload-button-wrapper {
     width: fit-content;
@@ -358,13 +378,6 @@ button > a:link {
 
 }
 
-.img-ranking-wrapper {
-    position: absolute;
-    left: 37em;
-    margin-top: 8em;
-    cursor: pointer;
-}
-
 .card img {
     height: 100%;
     width: 100%;
@@ -521,4 +534,6 @@ button > a:link {
 /*nav bar dentro da página*/
 .in-page-nav p {
     display: inline;
+    text-decoration: underline; color: blue;
 }
+
