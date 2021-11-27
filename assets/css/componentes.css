@@ -310,6 +310,8 @@ button > a:link {
     border: 2px solid var(--cor-escura);
     border-radius: 13px;
     margin-top: 8px;
+    height: fit-content;
+    
 }
 
 .cards-faq {
@@ -361,6 +363,7 @@ button > a:link {
     width:100%;
     padding: .5em;
     font-size: 17px;
+    
 }
 
 .card .conteudo p {
