@@ -214,8 +214,20 @@ button > a:link {
 
 
 /* box generica */
+.form-faq {
+    display: flex;
+    flex-direction: column;
+
+}
 .generic-form label {
     font-size: 1em;
+
+}
+
+.form-faq > label {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 0.1em;
 
 }
 
