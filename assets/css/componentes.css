@@ -282,6 +282,14 @@ button > a:link {
      padding-bottom: 1em;
  }
 
+ 
+.cards-maiores {
+    margin-top: 4.6em;
+    gap: 4em;
+    margin-bottom: 1.5em;
+}
+
+
 .card {
     display: flex;
     width: 100%;
@@ -361,6 +369,35 @@ button > a:link {
 
 .card h2{
     margin-top: 1px;
+}
+
+.card-maior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    min-width: 250px;
+    max-width: 500px;
+    height: 30%;
+    min-height: 140px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    text-justify: c;
+    color: var(--cor-principal);
+    border: solid 1px var(--cor-escura);    
+    transition: 150ms;
+    box-shadow: var(--box-shadow);
+}
+
+.card-maior:hover {
+    transform: scale(1.15);
+    opacity: 0.9;
+}
+
+.card-maior__conteudo {
+    font-size: 1.2em;
 }
 
 /* modal JS fundo do span-box */

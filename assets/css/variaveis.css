@@ -7,7 +7,8 @@
     --cor-principal: #EB8FA9;
     --cor-background-escura: rgb(53, 53, 53);
     --cor-background-clara: #f5f5f5;
-    --box-shadow: red;
+    --box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+                  0.125em 0.125em 0.25em rgba(0,0,0,.15);;
     --cor-principal-fraca: #f7d0db;
 }
 
