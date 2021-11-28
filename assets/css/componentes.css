@@ -312,6 +312,7 @@ button > a:link {
     border: 2px solid var(--cor-escura);
     border-radius: 13px;
     margin-top: 8px;
+    overflow:hidden;
 }
 
 .cards-faq {
@@ -368,6 +369,7 @@ button > a:link {
 .card .conteudo p {
     margin: 0 0 0.4em;
     padding: 0;
+    overflow: hidden;
 }
 .card__titulo{
     font-style: italic;
@@ -379,6 +381,19 @@ button > a:link {
     text-overflow: ellipsis;
     max-height: 6ch;
     overflow:hidden;
+    margin-top:10px;
+}
+
+.product-summary{
+    float: left;
+    max-width: 80%;
+    margin: 0 20px 5px 0;
+    font-size: .8em;
+}
+
+.product-summary p{
+    display: inline;
+    margin-right: 20px;
 }
 
 .edit-del-button-wrapper{
