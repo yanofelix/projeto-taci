@@ -190,8 +190,10 @@ button > a:link {
     margin-bottom: 10%;
     margin-left: 90%;
     margin-top: -20%;
-    
-    
+}
+
+.in-page-nav p{
+    display: inline;
 }
 
 .filtro-button {
@@ -331,7 +333,6 @@ button > a:link {
     border-radius: 12px 0 0 12px;
     overflow: hidden;
     position: relative;
-    padding:5px 0;
 }
 
 .img-card-wrapper > i {
@@ -354,6 +355,7 @@ button > a:link {
     width: 100%;
     display: block;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .card .conteudo {
