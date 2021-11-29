@@ -530,12 +530,12 @@ button > a:link {
   }
   
 /*Filters*/
-.filterSec{
+.filtersec{
     width: 100%;
     margin-top: .2em;  
 }
 
-.filterSec button{
+.filtersec button{
     margin: 4px 0;
     border-radius: 7px;
     outline: thin;
@@ -543,11 +543,11 @@ button > a:link {
     cursor: pointer;
 }
 
-.filterSec button:hover{
+.filtersec__btn:hover{
     background-color: var(--cor-principal-fraca);
 }
 
-.filterSec button:active{
+.filtersec__btn:active{
     background-color: var(--cor-principal);
 }
 /*GAMBIARRATION ENQUANTO NÃO TEM JS ONCLICK"*/
