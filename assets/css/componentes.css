@@ -335,16 +335,10 @@ button > a:link {
 
 
 .card-bonificacao {
-    display: flex;
-    width: 100%;
-    height: 100px;
+    
     background-color: var(--cor-clara);
     border: 2px solid var(--cor-escura);
     border-radius: 13px;
-    margin-top: 8px;
-    height: fit-content;
-    flex-direction: column;
-    padding: 0rem 1rem; 
     
 }
 
@@ -429,16 +423,6 @@ button > a:link {
     justify-content: space-between;
     padding: 0.3em 0.5em;
     font-size: 18px;
-}
-
-.edit-del-button-wrapper-bonificacao{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 18px;
-    Width: fit-content; 
-    margin: 0 0 0 auto; 
-    
 }
 
 .edit-button,
