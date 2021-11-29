@@ -449,6 +449,7 @@ button > a:link {
 }
 
 .card-maior {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -469,12 +470,18 @@ button > a:link {
 }
 
 .card-maior:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
     opacity: 0.9;
 }
 
 .card-maior__conteudo {
     font-size: 1.2em;
+}
+
+.card-maior__link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 /* modal JS fundo do span-box */
