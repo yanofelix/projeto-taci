@@ -38,21 +38,22 @@
 
         <div class="conteudo">
             <form class="generic-form" action="formulário" method="post">
-                <label for="cnpj">Nome da bonificação:</label><br>
+                <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label><br>
                 <input class="input-generic-box" type="text" placeholder="" required maxlength="20"><br><br>
-                <label for="cnpj">Validade:</label><br>
+                <label style="font-weight: bold;" for="cnpj">Validade:</label><br>
                 <input class="input-generic-box" type="date" placeholder="" required maxlength="20"><br><br>
-                <label for="cnpj">Valor da bonificação:</label><br>
+                <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label><br>
                 <input class="input-generic-box" type="text" placeholder="" required maxlength="20"><br><br>
-                <p class="paragrafo-centro">Clique em próximo para escolher os vídeos da bonificação </p><br>
-                
-                <div class="next-cancel-button-wrapper">
-                    <a href="lojas-associadas.html"><button class="cancel-button" type="button">Cancelar</button></a>
+                <p style="font-weight: bold;" class="paragrafo-centro">Clique em próximo para escolher os vídeos da bonificação </p><br>
 
-                    <a class="salvar" onclick="abrirModal();"><button type="button" id="botao" class="next-button"
-                            disabled="disabled">Salvar</button></a>
+                <div class="next-cancel-button-wrapper">
+
+                    <input class="cancel-button" type="submit" value="Voltar">
+                    <a href="#" class="salvar"><input class="next-button" type="button" value="Próximo"></a>
                 </div>
+
             </form>
+        </div>
     </section>
 
     <footer>
@@ -61,7 +62,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../assets/js/geral.js"></script>
+    <script type="text/javascript" src="/assets/js/geral.js"></script>
 </body>
 
 </html>
