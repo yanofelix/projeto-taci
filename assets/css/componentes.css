@@ -54,6 +54,9 @@ button > a {
     text-decoration: none;
 }
 
+form > a {
+    text-decoration: none;
+}
 
 button > a:visited,
 button > a:link {
