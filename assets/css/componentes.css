@@ -14,7 +14,7 @@
     box-shadow: var(--bs);
 }
 
-.span-box-borda {
+.span-box-fundo {
     overflow-wrap: break-word;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,6 @@
     border: #414141 solid 2px;
     box-shadow: var(--bs);
     font-weight: bolder;
-    font-style: italic;
     text-align: center;
     margin-left: 30%;
 }
