@@ -222,8 +222,10 @@ button > a:link {
     margin-bottom: 10%;
     margin-left: 90%;
     margin-top: -20%;
-    
-    
+}
+
+.in-page-nav p{
+    display: inline;
 }
 
 .filtro-button {
@@ -337,13 +339,13 @@ button > a:link {
 .card {
     display: flex;
     width: 100%;
-    height: 95px;
+    max-height: 150px;
     background-color: var(--cor-clara);
     border: 2px solid var(--cor-escura);
     border-radius: 13px;
     margin-top: 8px;
+    overflow:hidden;
     height: fit-content;
-    
 }
 
 .cards-faq {
@@ -365,7 +367,6 @@ button > a:link {
     border-radius: 12px 0 0 12px;
     overflow: hidden;
     position: relative;
-    padding:5px 0;
 }
 
 .img-card-wrapper > i {
@@ -395,6 +396,7 @@ button > a:link {
     width: 100%;
     display: block;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .card .conteudo {
@@ -408,6 +410,7 @@ button > a:link {
 .card .conteudo p {
     margin: 0 0 0.4em;
     padding: 0;
+    overflow: hidden;
 }
 .card__titulo{
     font-style: italic;
@@ -417,8 +420,21 @@ button > a:link {
 
 .card__descricao {
     text-overflow: ellipsis;
-    max-height: 5ch;
+    max-height: 6ch;
     overflow:hidden;
+    margin-top:10px;
+}
+
+.product-summary{
+    float: left;
+    max-width: 80%;
+    margin: 0 20px 5px 0;
+    font-size: .8em;
+}
+
+.product-summary p{
+    display: inline;
+    margin-right: 20px;
 }
 
 .edit-del-button-wrapper{
