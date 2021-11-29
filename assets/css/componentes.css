@@ -224,8 +224,9 @@ button > a:link {
     margin-top: -20%;
 }
 
-.in-page-nav p{
+.in-page-nav p {
     display: inline;
+}
 
 .filtro-button {
     width: 180px;
