@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lojistas Associados</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-wrapper">
+            <img src="/assets/img/logo-taci-menor.png" alt="">
+            <div class="linha"></div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburguer"></span>
+            </button>
+        </div>
+        <!-- navbar -->
+        <div class="background-page-toda"></div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Logistas</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Aprendizados</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Dicas e Produtos</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Bonificações</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <h1>Adicionar bonificação por aprendizado</h1>
+
+        <div class="conteudo">
+            <form class="generic-form" action="formulário" method="post">
+                <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label><br>
+                <input class="input-generic-box" type="text" value="Aprenda meu Fí" maxlength="20"><br><br>
+                <label style="font-weight: bold;" for="cnpj">Validade:</label><br>
+                <input class="input-generic-box" type="date"  maxlength="20"><br><br>
+                <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label><br>
+                <input class="input-generic-box" type="text" value="R$ 350,00" maxlength="20"><br><br>
+                <div class="span-box-fundo">
+                    <p style="font-weight: bold; text-decoration: underline;"
+                    >Meta</p>
+                    <p>Assistir vídeo A</p>
+                    <p>Assistir vídeo B</p>
+                    <p>Assistir vídeo C</p>
+                    <p>Assistir vídeo Y</p>
+                </div><br><br>
+
+                <div class="next-cancel-button-wrapper">
+
+                    <input class="cancel-button" type="submit" value="Voltar">
+                    <a href="#" class="salvar"><input class="next-button" type="button" value="Salvar"></a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="marca-wrapper">
+            <p>Powered by C4NGAÇO SYSTEMS</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/geral.js"></script>
+</body>
+
+</html>
