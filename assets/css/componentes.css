@@ -162,7 +162,6 @@ button > a:link {
     background-color: transparent;
     border: 0;
     transition: 250ms cubic-bezier(.5, 0, .5, 1);
-
 }
 
 .span_box__upload { 
@@ -173,10 +172,8 @@ button > a:link {
     text-align: center;
     border-radius: 5px;
     border: #414141 solid 2px;
-    box-shadow: var(--bs);
-    
+    box-shadow: var(--bs);   
 }
-
 
 .button-upload:hover {
     transform: scale(1.1);
@@ -209,8 +206,7 @@ button > a:link {
     margin-bottom: 10%;
     margin-left: 90%;
     margin-top: -20%;
-    
-    
+       
 }
 
 .filtro-button {
@@ -230,7 +226,6 @@ button > a:link {
     height: 2em;
     border-radius: 5px;
 }
-
 
 /* box generica */
 .form-faq {
@@ -312,14 +307,12 @@ button > a:link {
      padding-top: 1em;
      padding-bottom: 1em;
  }
-
  
 .cards-maiores {
     margin-top: 4.6em;
     gap: 4em;
     margin-bottom: 1.5em;
 }
-
 
 .card {
     display: flex;
@@ -330,15 +323,6 @@ button > a:link {
     border-radius: 13px;
     margin-top: 8px;
     height: fit-content;
-    
-}
-
-
-.card-bonificacao {
-    
-    background-color: var(--cor-clara);
-    border: 2px solid var(--cor-escura);
-    border-radius: 13px;
     
 }
 
@@ -405,6 +389,7 @@ button > a:link {
     margin: 0 0 0.4em;
     padding: 0;
 }
+
 .card__titulo{
     font-style: italic;
     text-decoration: underline;
