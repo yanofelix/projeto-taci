@@ -396,7 +396,7 @@ button > a:link {
     border-radius: 5px;
 }
 
-.card .conteudo {
+.card__conteudo {
     height: 100%;
     width:100%;
     padding: .5em;
@@ -404,7 +404,7 @@ button > a:link {
     
 }
 
-.card .conteudo p {
+.card__conteudo p {
     margin: 0 0 0.4em;
     padding: 0;
     overflow: hidden;
