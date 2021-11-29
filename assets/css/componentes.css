@@ -14,19 +14,6 @@
     box-shadow: var(--bs);
 }
 
-.span-box-bonificacao {
-    overflow-wrap: break-word;
-    justify-content: space-evenly;
-    flex-direction: column;
-    width: 100%;
-    padding: 0rem 1rem;
-    border-radius: 5px;
-    border: #414141 solid 2px;
-    flex-direction: column;
-    box-shadow: var(--bs);
-    font-weight: bold;    
-}
-
 .span-box > h2{
     padding: 0;
     margin: 0 0 1rem;
@@ -175,7 +162,6 @@ button > a:link {
     background-color: transparent;
     border: 0;
     transition: 250ms cubic-bezier(.5, 0, .5, 1);
-
 }
 
 .span_box__upload { 
@@ -186,10 +172,8 @@ button > a:link {
     text-align: center;
     border-radius: 5px;
     border: #414141 solid 2px;
-    box-shadow: var(--bs);
-    
+    box-shadow: var(--bs);   
 }
-
 
 .button-upload:hover {
     transform: scale(1.1);
@@ -226,7 +210,6 @@ button > a:link {
 
 .in-page-nav p{
     display: inline;
-}
 
 .filtro-button {
     width: 180px;
@@ -245,7 +228,6 @@ button > a:link {
     height: 2em;
     border-radius: 5px;
 }
-
 
 /* box generica */
 .form-faq {
@@ -327,14 +309,12 @@ button > a:link {
      padding-top: 1em;
      padding-bottom: 1em;
  }
-
  
 .cards-maiores {
     margin-top: 4.6em;
     gap: 4em;
     margin-bottom: 1.5em;
 }
-
 
 .card {
     display: flex;
@@ -412,6 +392,7 @@ button > a:link {
     padding: 0;
     overflow: hidden;
 }
+
 .card__titulo{
     font-style: italic;
     text-decoration: underline;
