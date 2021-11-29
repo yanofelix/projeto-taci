@@ -14,23 +14,6 @@
     box-shadow: var(--bs);
 }
 
-.span-box-fundo {
-    overflow-wrap: break-word;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 40%;
-    height: fit-content;
-    padding: 0.5rem;
-    background-color: var(--cor-principal-fraca);
-    border-radius: 5px;
-    border: #414141 solid 2px;
-    box-shadow: var(--bs);
-    font-weight: bolder;
-    text-align: center;
-    margin-left: 30%;
-}
-
 .span-box > h2{
     padding: 0;
     margin: 0 0 1rem;
@@ -224,8 +207,9 @@ button > a:link {
     margin-top: -20%;
 }
 
-.in-page-nav p{
+.in-page-nav p {
     display: inline;
+}
 
 .filtro-button {
     width: 180px;
@@ -332,6 +316,10 @@ button > a:link {
     margin-bottom: 1.5em;
 }
 
+.cards-faq {
+    margin-top: 0.3em;
+}
+
 .card {
     display: flex;
     width: 100%;
@@ -342,10 +330,18 @@ button > a:link {
     margin-top: 8px;
     overflow:hidden;
     height: fit-content;
+    box-shadow: var(--bs);
 }
 
-.cards-faq {
-    margin-top: 0.3em;
+.card-resumo {
+    overflow-wrap: break-word;
+    flex-direction: column;
+    border-radius: 12px;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    font-weight: bolder;
+    text-align: center;
+    max-height: none;
 }
 
 .card-faq {
@@ -355,17 +351,16 @@ button > a:link {
     border-radius: 7px;
     padding: 0.3em 0 0.3em 0.3em;
     font-size: 1.1em;
-    color: var(--cor-escura);
 }
 
-.img-card-wrapper {
+.card__img-wrapper {
     width: 140px;
     border-radius: 12px 0 0 12px;
     overflow: hidden;
     position: relative;
 }
 
-.img-card-wrapper > i {
+.card__img-wrapper > i {
     position: absolute;
     top: 33%;
     left: 40%;
@@ -375,7 +370,7 @@ button > a:link {
     transition: 200ms;  
 }
 
-.img-card-wrapper > i:hover {
+.card__img-wrapper > i:hover {
     transform: scale(1.1);
 
 }
@@ -388,14 +383,15 @@ button > a:link {
 }
 
 .card img {
-    height: 100%;
     width: 100%;
+    height: 100%;
+    min-height: 100px ;
     display: block;
     object-fit: cover;
     border-radius: 5px;
 }
 
-.card .conteudo {
+.card__conteudo {
     height: 100%;
     width:100%;
     padding: .5em;
@@ -403,7 +399,7 @@ button > a:link {
     
 }
 
-.card .conteudo p {
+.card__conteudo p {
     margin: 0 0 0.4em;
     padding: 0;
     overflow: hidden;
@@ -453,6 +449,7 @@ button > a:link {
 }
 
 .card-maior {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -473,12 +470,18 @@ button > a:link {
 }
 
 .card-maior:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
     opacity: 0.9;
 }
 
 .card-maior__conteudo {
     font-size: 1.2em;
+}
+
+.card-maior__link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 /* modal JS fundo do span-box */
@@ -530,12 +533,12 @@ button > a:link {
   }
   
 /*Filters*/
-.filterSec{
+.filtersec{
     width: 100%;
     margin-top: .2em;  
 }
 
-.filterSec button{
+.filtersec button{
     margin: 4px 0;
     border-radius: 7px;
     outline: thin;
@@ -543,11 +546,11 @@ button > a:link {
     cursor: pointer;
 }
 
-.filterSec button:hover{
+.filtersec__btn:hover{
     background-color: var(--cor-principal-fraca);
 }
 
-.filterSec button:active{
+.filtersec__btn:active{
     background-color: var(--cor-principal);
 }
 /*GAMBIARRATION ENQUANTO NÃO TEM JS ONCLICK"*/
