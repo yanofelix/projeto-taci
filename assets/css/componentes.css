@@ -333,6 +333,10 @@ button > a:link {
     margin-bottom: 1.5em;
 }
 
+.cards-faq {
+    margin-top: 0.3em;
+}
+
 .card {
     display: flex;
     width: 100%;
@@ -345,10 +349,6 @@ button > a:link {
     height: fit-content;
 }
 
-.cards-faq {
-    margin-top: 0.3em;
-}
-
 .card-faq {
     width: 100%;
     background-color: var(--cor-clara);
@@ -356,17 +356,16 @@ button > a:link {
     border-radius: 7px;
     padding: 0.3em 0 0.3em 0.3em;
     font-size: 1.1em;
-    color: var(--cor-escura);
 }
 
-.img-card-wrapper {
+.card__img-wrapper {
     width: 140px;
     border-radius: 12px 0 0 12px;
     overflow: hidden;
     position: relative;
 }
 
-.img-card-wrapper > i {
+.card__img-wrapper > i {
     position: absolute;
     top: 33%;
     left: 40%;
@@ -376,7 +375,7 @@ button > a:link {
     transition: 200ms;  
 }
 
-.img-card-wrapper > i:hover {
+.card__img-wrapper > i:hover {
     transform: scale(1.1);
 
 }
