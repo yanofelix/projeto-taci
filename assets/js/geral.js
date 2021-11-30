@@ -27,6 +27,7 @@ function verificarInputs() {
     $('#botao').prop('disabled', !preenchidos);
 }
 
+/* Colapse do FAQ */ 
 $('li.faq-resposta').hide();
 $('li.faq-pergunta').click(function () {
   $(this).next().slideToggle();
