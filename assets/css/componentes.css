@@ -409,11 +409,9 @@ button > a:link {
 }
 
 .card__conteudo {
-    height: 100%;
     width:100%;
     padding: .5em;
     font-size: 17px;
-    
 }
 
 .card__conteudo p {
@@ -571,9 +569,10 @@ button > a:link {
     background-color: var(--cor-principal);
 }
 /*GAMBIARRATION ENQUANTO NÃO TEM JS ONCLICK"*/
-.cards a{
+.cards > a {
     color: var(--cor-escura);
     text-decoration: none;
+    width: 100%;
 }
 
 /*nav bar dentro da página*/

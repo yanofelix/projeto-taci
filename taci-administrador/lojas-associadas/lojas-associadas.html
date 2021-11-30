@@ -52,7 +52,7 @@
                 </div>
                 <div class="edit-del-button-wrapper">
                     <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
-                    <button class="del-button"><a class="#" onclick="abrirModal();"><i class="fas fa-trash-alt"></i></a></button>
+                    <button class="del-button" onclick="abrirModal()"><a class="#" onclick="abrirModal();"><i class="fas fa-trash-alt"></i></a></button>
                 </div>
             </div>
             <!-- card -->
@@ -65,7 +65,7 @@
                 </div>
                 <div class="edit-del-button-wrapper">
                     <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
-                    <button class="del-button"><i class="fas fa-trash-alt"></i></button>
+                    <button class="del-button" onclick="abrirModal()"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
             <!-- card -->
@@ -78,7 +78,7 @@
                 </div>
                 <div class="edit-del-button-wrapper">
                     <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
-                    <button class="del-button"><i class="fas fa-trash-alt"></i></button>
+                    <button class="del-button" onclick="abrirModal()"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
             <!-- card -->
@@ -91,7 +91,7 @@
                 </div>
                 <div class="edit-del-button-wrapper">
                     <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
-                    <button class="del-button"><i class="fas fa-trash-alt"></i></button>
+                    <button class="del-button" onclick="abrirModal()" onclick="abrirModal()"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
             <!-- card -->
@@ -104,7 +104,7 @@
                 </div>
                 <div class="edit-del-button-wrapper">
                     <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
-                    <button class="del-button"><i class="fas fa-trash-alt"></i></button>
+                    <button class="del-button" onclick="abrirModal()" onclick="abrirModal()"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
             <!-- card -->
@@ -117,7 +117,7 @@
                 </div>
                 <div class="edit-del-button-wrapper">
                     <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
-                    <button class="del-button"><i class="fas fa-trash-alt"></i></button>
+                    <button class="del-button" onclick="abrirModal()" onclick="abrirModal()"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
             <!-- card -->
@@ -130,19 +130,19 @@
                 </div>
                 <div class="edit-del-button-wrapper">
                     <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
-                    <button class="del-button"><i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
-            <div id="fundo"></div>
-            <div id="modal">
-                <a href="lojas-associadas.html" class="fechar-sim" onclick=" return alert ('Esta loja será deletada, clique OK para confirmar')">Sim</a>         
-                
-                <a href="lojas-associadas.html" class="fechar-nao" onclick="fecharModal();">Não</a>
-                <div class="texto-aviso">
-                    <p class="p-deletar-card">Você tem certeza que deseja deletar esta loja?</p>
+                    <button class="del-button" onclick="abrirModal()"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
         </div> 
+        <div id="fundo"></div>
+        <div id="modal">
+            <a href="lojas-associadas.html" class="fechar-sim" onclick=" return alert ('Esta loja será deletada, clique OK para confirmar')">Sim</a>         
+            
+            <a href="lojas-associadas.html" class="fechar-nao" onclick="fecharModal();">Não</a>
+            <div class="texto-aviso">
+                <p class="p-deletar-card">Você tem certeza que deseja deletar esta loja?</p>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="marca-wrapper">
