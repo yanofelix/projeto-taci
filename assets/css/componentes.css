@@ -391,7 +391,6 @@ button > a:link {
     min-height: 100px ;
     display: block;
     object-fit: cover;
-    border-radius: 5px;
 }
 
 .card__conteudo {
