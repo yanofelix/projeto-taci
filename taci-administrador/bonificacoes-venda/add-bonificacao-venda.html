@@ -35,34 +35,49 @@
     </header>
     <section class="container">
         <h1>Adicionar bonificação por venda</h1>
-
-        <div class="card__conteudo">
             <form class="generic-form" action="formulário" method="post">
-                <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label><br>
-                <input class="input-generic-box" type="text" placeholder="" required maxlength="20"><br><br>
-                <label style="font-weight: bold;" for="cnpj">Validade:</label><br>
-                <input class="input-generic-box" type="date" placeholder="" required maxlength="20"><br><br>
-                <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label><br>
-                <input class="input-generic-box" type="text" placeholder="" required maxlength="20"><br><br>
-                <p style="font-weight: bold;">Bonificação para:</p><br>
-                <div class="radio-btn-wrapper">
-                    <input type="radio" name="webmaster" value="Loja selecionada" checked="true"> Loja selecionada
-                    <input type="radio" name="webmaster" value="Loja selecionada"> Vendedor          
+                <div class="generic-form__box-wrapper">
+                    <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label>
+                    <input class="input-generic-box" type="text" placeholder="" required maxlength="20">
                 </div>
-                <p style="font-weight: bold;">Selecione um tipo de meta:</p><br>
-                <div action="radio-btn-wrapper">
-                    <input type="radio" name="webmaster2" value="Vendas totais" checked="true"> Vendas totais
-                    <input type="radio" name="webmaster2" value="Vendas totais"> Produtos selecionados
+                <div class="generic-form__box-wrapper">
+                    <label style="font-weight: bold;" for="cnpj">Validade:</label>
+                    <input class="input-generic-box" type="date" placeholder="" required maxlength="20">
                 </div>
-
+                <div class="generic-form__box-wrapper">
+                    <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label>
+                    <input class="input-generic-box" type="text" placeholder="" required maxlength="20">
+                </div>
+                <!-- container dos radios btns -->
+                <p style="font-weight: bold;">Bonificação para:</p>
+                <div class="radio-btns-container">
+                    <div class="radio-btn-wrapper">
+                        <input type="radio" name="rb1" checked="true">
+                        <label for="rb1">loja selecionada</label>
+                    </div>
+                    <div class="radio-btn-wrapper">
+                        <input type="radio" name="rb1">
+                        <label for="rb2">vendedor</label> 
+                    </div>
+                </div>
+                <!-- container dos radios btns -->
+                <p style="font-weight: bold;">Selecione um tipo de meta:</p>
+                <div class="radio-btns-container">
+                    <div class="radio-btn-wrapper">
+                        <input type="radio" name="rb2" checked="true"> 
+                        <label for="rb1">Vendas totais</label> 
+                    </div>
+                    <div class="radio-btn-wrapper">
+                        <input type="radio" name="rb2">
+                        <label for="rb1">Produtos selecionados</label> 
+                    </div>
+                </div>
                 <div class="next-cancel-button-wrapper">
-
                     <input class="cancel-button" type="submit" value="Voltar">
                     <a href="#" class="salvar"><input class="next-button" type="button" value="Próximo"></a>
                 </div>
 
             </form>
-        </div>
     </section>
 
     <footer>
