@@ -26,3 +26,8 @@ function verificarInputs() {
     const preenchidos = inputs.get().every(({value}) => value)
     $('#botao').prop('disabled', !preenchidos);
 }
+
+$('li.faq-resposta').hide();
+$('li.faq-pergunta').click(function () {
+  $(this).next().slideToggle();
+});
