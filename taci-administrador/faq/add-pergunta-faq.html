@@ -39,12 +39,17 @@
     <section class="container">
         <h1>FAQ</h1>
         <form class="generic-form form-faq">
-            <label for="pergunta">Pergunta</label><br>
-            <input class="input-generic-box" type="text" id="pergunta" name="pergunta"
-                placeholder="Insira sua pergunta"><br>
-            <label for="resposta">Resposta</label><br>
-            <textarea class="input-generic-box" name="resposta" id="resposta" cols="10" rows="14" wrap="soft"
-                style="overflow: hidden;" placeholder="Insira sua resposta" maxlength="500"></textarea>
+            <div class="generic-form__box-wrapper">
+                <label for="pergunta">Pergunta</label>
+                <input class="input-generic-box" type="text" id="pergunta" name="pergunta"
+                    placeholder="Insira sua pergunta">
+            </div>
+            <div class="generic-form__box-wrapper">
+                <label for="resposta">Resposta</label>
+                <textarea class="input-generic-box" name="resposta" id="resposta" cols="10" rows="14" wrap="soft"
+                    style="overflow: hidden;" placeholder="Insira sua resposta" maxlength="500">
+            </textarea>
+            </div>
 
             <div class="next-cancel-button-wrapper">
                 <button class="cancel-button"><a href="faq.html">cancelar</a></button>

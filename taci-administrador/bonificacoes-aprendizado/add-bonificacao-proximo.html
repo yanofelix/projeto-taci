@@ -35,31 +35,32 @@
     </header>
     <section class="container">
         <h1>Adicionar bonificação por aprendizado</h1>
-
-        <div class="card__conteudo">
             <form class="generic-form" action="formulário" method="post">
-                <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label><br>
-                <input class="input-generic-box" type="text" value="Aprenda meu Fí" maxlength="20"><br><br>
-                <label style="font-weight: bold;" for="cnpj">Validade:</label><br>
-                <input class="input-generic-box" type="date"  maxlength="20"><br><br>
-                <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label><br>
-                <input class="input-generic-box" type="text" value="R$ 350,00" maxlength="20"><br><br>
+                <div class="generic-form__box-wrapper">
+                    <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label>
+                    <input class="input-generic-box" type="text" placeholder="aprenda meu fi" maxlength="20">
+                </div>
+                <div class="generic-form__box-wrapper">
+                    <label style="font-weight: bold;" for="cnpj">Validade:</label>
+                    <input class="input-generic-box" type="date" maxlength="20">
+                </div>
+                <div class="generic-form__box-wrapper">
+                    <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label>
+                    <input class="input-generic-box" type="text" placeholder="R$ 000,00" maxlength="20">
+                </div>
                 <div class="card card-resumo">
-                    <p style="font-weight: bold; text-decoration: underline;"
-                    >Meta</p>
+                    <p style="font-weight: bold; text-decoration: underline;">Meta</p>
                     <p>Assistir vídeo A</p>
                     <p>Assistir vídeo B</p>
                     <p>Assistir vídeo C</p>
                     <p>Assistir vídeo Y</p>
-                </div><br><br>
+                </div>
 
                 <div class="next-cancel-button-wrapper">
-
                     <input class="cancel-button" type="submit" value="Voltar">
                     <a href="#" class="salvar"><input class="next-button" type="button" value="Salvar"></a>
                 </div>
             </form>
-        </div>
     </section>
 
     <footer>
@@ -67,6 +68,7 @@
             <p>Powered by C4NGAÇO SYSTEMS</p>
         </div>
     </footer>
+    <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/js/geral.js"></script>
 </body>
