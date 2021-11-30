@@ -321,6 +321,7 @@ button > a:link {
 
 .cards-faq {
     margin-top: 0.3em;
+    padding: 1em 0;
 }
 
 .card {
@@ -566,4 +567,20 @@ button > a:link {
 .in-page-nav p {
     display: inline;
     text-decoration: underline; color: blue;
+}
+
+/* ---------- FAQ ---------- */
+li {
+    list-style:none;
+}
+li.faq-pergunta {
+font-weight: 700;
+}
+li.faq-pergunta:hover {
+cursor: pointer;
+}
+
+li.faq-resposta {
+    background: transparent;
+    border: 0;
 }
