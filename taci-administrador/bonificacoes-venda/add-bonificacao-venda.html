@@ -34,16 +34,44 @@
         </nav>
     </header>
     <section class="container">
-        <h1>Adicionar bonificação por aprendizado</h1>
+        <h1>Adicionar bonificação por venda</h1>
             <form class="generic-form" action="formulário" method="post">
-                <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label><br>
-                <input class="input-generic-box" type="text" placeholder="" required maxlength="20"><br><br>
-                <label style="font-weight: bold;" for="cnpj">Validade:</label><br>
-                <input class="input-generic-box" type="date" placeholder="" required maxlength="20"><br><br>
-                <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label><br>
-                <input class="input-generic-box" type="text" placeholder="" required maxlength="20"><br><br>
-                <p style="font-weight: bold;" class="paragrafo-centro">Clique em próximo para escolher os vídeos da bonificação </p><br>
-
+                <div class="generic-form__box-wrapper">
+                    <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label>
+                    <input class="input-generic-box" type="text" placeholder="" required maxlength="20">
+                </div>
+                <div class="generic-form__box-wrapper">
+                    <label style="font-weight: bold;" for="cnpj">Validade:</label>
+                    <input class="input-generic-box" type="date" placeholder="" required maxlength="20">
+                </div>
+                <div class="generic-form__box-wrapper">
+                    <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label>
+                    <input class="input-generic-box" type="text" placeholder="" required maxlength="20">
+                </div>
+                <!-- container dos radios btns -->
+                <p style="font-weight: bold;">Bonificação para:</p>
+                <div class="radio-btns-container">
+                    <div class="radio-btn-wrapper">
+                        <input type="radio" name="rb1" checked="true">
+                        <label for="rb1">loja selecionada</label>
+                    </div>
+                    <div class="radio-btn-wrapper">
+                        <input type="radio" name="rb1">
+                        <label for="rb2">vendedor</label> 
+                    </div>
+                </div>
+                <!-- container dos radios btns -->
+                <p style="font-weight: bold;">Selecione um tipo de meta:</p>
+                <div class="radio-btns-container">
+                    <div class="radio-btn-wrapper">
+                        <input type="radio" name="rb2" checked="true"> 
+                        <label for="rb1">Vendas totais</label> 
+                    </div>
+                    <div class="radio-btn-wrapper">
+                        <input type="radio" name="rb2">
+                        <label for="rb1">Produtos selecionados</label> 
+                    </div>
+                </div>
                 <div class="next-cancel-button-wrapper">
                     <input class="cancel-button" type="submit" value="Voltar">
                     <a href="#" class="salvar"><input class="next-button" type="button" value="Próximo"></a>

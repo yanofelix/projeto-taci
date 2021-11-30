@@ -80,6 +80,7 @@ button > a:link {
     justify-content: space-between;
     Width: fit-content; /*adicionado*/
     margin: 0 auto; /*adicionado*/
+    margin-top: auto;
 }
 
 /* botão positivo */
@@ -233,6 +234,13 @@ button > a:link {
 }
 
 /* box generica */
+.generic-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    min-height: 480px;
+}
+
 .form-faq {
     display: flex;
     flex-direction: column;
@@ -295,14 +303,15 @@ button > a:link {
  }
 
 /* radio button  */
- .form-radio {
-     display: flex;
-     width: 100%;
-     font-size: .8em;
- }
+.radio-btns-container {
+    display: flex;
+    gap: 1em;
+}
 
- .radio-wrapper + .radio-wrapper {
-    margin-left: 1.5em;
+
+.radio-btn-wrapper {
+    display: flex;
+    gap: 0.5em
  }
 
  /* ----------CARDS ---------- */
