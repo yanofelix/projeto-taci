@@ -35,30 +35,33 @@
     </header>
     <section class="container">
         <h1>Editar bonificação por aprendizado</h1>
+        <form class="generic-form" action="formulário" method="post">
+            <div class="generic-form__box-wrapper">
+                <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label>
+                <input class="input-generic-box" type="text" value="Aprenda meu Fí" maxlength="20">
+            </div>
+            <div class="generic-form__box-wrapper">
+                <label style="font-weight: bold;" for="cnpj">Validade:</label>
+                <input class="input-generic-box" type="date" maxlength="20">
+            </div>
+            <div class="generic-form__box-wrapper">
+                <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label>
+                <input class="input-generic-box" type="text" value="R$ 350,00" maxlength="20">
+            </div>
+            <div class="card card-resumo">
+                <p style="font-weight: bold; text-decoration: underline;">Meta</p>
+                <p>Assistir vídeo A</p>
+                <p>Assistir vídeo B</p>
+                <p>Assistir vídeo C</p>
+                <p>Assistir vídeo Y</p>
+            </div>
 
-        <div class="card__conteudo">
-            <form class="generic-form" action="formulário" method="post">
-                <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label><br>
-                <input class="input-generic-box" type="text" value="Aprenda meu Fí" maxlength="20"><br><br>
-                <label style="font-weight: bold;" for="cnpj">Validade:</label><br>
-                <input class="input-generic-box" type="date"  maxlength="20"><br><br>
-                <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label><br>
-                <input class="input-generic-box" type="text" value="R$ 350,00" maxlength="20"><br><br>
-                <div class="card card-resumo">
-                    <p style="font-weight: bold; text-decoration: underline;"
-                    >Meta</p>
-                    <p>Assistir vídeo A</p>
-                    <p>Assistir vídeo B</p>
-                    <p>Assistir vídeo C</p>
-                    <p>Assistir vídeo Y</p>
-                </div><br><br>
+            <div class="next-cancel-button-wrapper">
 
-                <div class="next-cancel-button-wrapper">
-
-                    <input class="cancel-button" type="submit" value="Voltar">
-                    <a href="#" class="salvar"><input class="next-button" type="button" value="Salvar"></a>
-                </div>
-            </form>
+                <input class="cancel-button" type="submit" value="Voltar">
+                <a href="#" class="salvar"><input class="next-button" type="button" value="Salvar"></a>
+            </div>
+        </form>
         </div>
     </section>
 

@@ -238,6 +238,10 @@ button > a:link {
     min-height: 480px;
 }
 
+.menos-gap {
+    gap: 1em;
+}
+
 .form-faq {
     display: flex;
     flex-direction: column;

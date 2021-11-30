@@ -35,26 +35,28 @@
     </header>
     <section class="container">
         <h1>Editar bonificação por aprendizado</h1>
+        <form class="generic-form" action="formulário" method="post">
+            <div class="generic-form__box-wrapper">
+                <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label>
+                <input class="input-generic-box" type="text" value="Aprenda meu fí">
+            </div>
+            <div class="generic-form__box-wrapper">
+                <label style="font-weight: bold;" for="cnpj">Validade:</label>
+                <input class="input-generic-box" type="date">
+            </div>
+            <div class="generic-form__box-wrapper">
+                <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label>
+                <input class="input-generic-box" type="text" value="R$ 500,00">
+            </div>
+            <p style="font-weight: bold;" class="paragrafo-centro">Clique em próximo para escolher os vídeos da
+                bonificação </p>
+            <div class="next-cancel-button-wrapper">
+                <input class="cancel-button" type="submit" value="Voltar">
+                <a href="#" class="salvar"><input class="next-button" type="button" value="Próximo"></a>
+            </div>
 
-        <div class="card__conteudo">
-            <form class="generic-form" action="formulário" method="post">
-                <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label><br>
-                <input class="input-generic-box" type="text" value="Aprenda meu fí"><br><br>
-                <label style="font-weight: bold;" for="cnpj">Validade:</label><br>
-                <input class="input-generic-box" type="date"><br><br>
-                <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label><br>
-                <input class="input-generic-box" type="text" value="R$ 500,00"><br><br>
-                <p style="font-weight: bold;" class="paragrafo-centro">Clique em próximo para escolher os vídeos da
-                    bonificação </p><br>
 
-                <div class="next-cancel-button-wrapper">
-
-                    <input class="cancel-button" type="submit" value="Voltar">
-                    <a href="#" class="salvar"><input class="next-button" type="button" value="Próximo"></a>
-                </div>
-
-            </form>
-        </div>
+        </form>
     </section>
 
     <footer>
