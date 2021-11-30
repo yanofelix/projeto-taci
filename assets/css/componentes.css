@@ -351,6 +351,7 @@ button > a:link {
     border-radius: 7px;
     padding: 0.3em 0 0.3em 0.3em;
     font-size: 1.1em;
+    word-break: normal;
 }
 
 .card__img-wrapper {
