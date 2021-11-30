@@ -54,6 +54,9 @@ button > a {
     text-decoration: none;
 }
 
+form > a {
+    text-decoration: none;
+}
 
 button > a:visited,
 button > a:link {
@@ -331,6 +334,7 @@ button > a:link {
 
 .cards-faq {
     margin-top: 0.3em;
+    padding: 1em 0;
 }
 
 .card {
@@ -402,7 +406,6 @@ button > a:link {
     min-height: 100px ;
     display: block;
     object-fit: cover;
-    border-radius: 5px;
 }
 
 .card__conteudo {
@@ -577,4 +580,20 @@ button > a:link {
 .in-page-nav p {
     display: inline;
     text-decoration: underline; color: blue;
+}
+
+/* ---------- FAQ ---------- */
+li {
+    list-style:none;
+}
+li.faq-pergunta {
+font-weight: 700;
+}
+li.faq-pergunta:hover {
+cursor: pointer;
+}
+
+li.faq-resposta {
+    background: transparent;
+    border: 0;
 }
