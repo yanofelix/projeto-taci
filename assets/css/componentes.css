@@ -270,6 +270,14 @@ button > a:link {
     margin-bottom: 0.5em;
 }
 
+.input-generic-box-textarea {
+    width: 100%;
+    border-radius: 7px;
+    margin-bottom: 0.5em;
+    resize: none;
+
+}
+
 /* box de pesquisa */
 .input-search-box {
     height: 1.8rem;
