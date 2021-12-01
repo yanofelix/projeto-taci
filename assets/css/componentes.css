@@ -532,6 +532,21 @@ button > a:link {
     padding-top: 2%;
   }
 
+  #modal2 {
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    margin: -75px 0 0 -75px;
+    position: absolute;
+    background-color: var(--cor-background-clara);
+    border-radius: 5px;
+    z-index: 99;
+    display: none;
+    float:inline-end;
+    text-align: center;
+    padding-top: 2%;
+  }
   .texto-aviso{
       text-align: center;
       padding-top: 15%;

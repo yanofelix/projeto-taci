@@ -38,7 +38,7 @@
     <section class="container">
         <h1>Adicionar vendedor</h1>
         <div class="upload-button-wrapper">
-            <button class="button-upload"><i class="fas fa-cloud-upload-alt"></i><span>enviar imagem</span></button>
+            <button class="button-upload" onclick="abrirModal2()"><i class="fas fa-cloud-upload-alt"></i><span>enviar imagem</span></button>
         </div>
         <form class="generic-form" action="formulário" method="post">
 
@@ -88,9 +88,15 @@
 
         <div id="fundo"></div>
         <div id="modal">
-            <a href="vendedores-lojista.html" class="fechar" onclick="fecharModal();">Fechar</a>
             <div class="texto-aviso">
                 <p>Loja adicionada com sucesso!</p>
+                <a href="vendedores-lojista.html" class="fechar" onclick="fecharModal()">Fechar</a>
+            </div>
+        </div>
+        <div id="modal2">
+            <div class="texto-aviso">
+                <p>Imagem adicionada com sucesso</p>
+                <a href="add-vendedor.html" class="fechar" onclick="fecharModal()">Fechar</a>
             </div>
         </div>
 
