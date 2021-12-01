@@ -129,6 +129,7 @@ button>a:link {
 
 .add-button-wrapper {
     margin: .5rem;
+    display: flex;
 }
 
 .add-button {
@@ -160,7 +161,7 @@ button>a:link {
     margin: 0;
     cursor: pointer;
     position: relative;
-    padding-left: 50%;
+    margin-left: auto;
 }
 
 
