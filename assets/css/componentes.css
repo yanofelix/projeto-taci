@@ -121,6 +121,7 @@ button > a:link {
     background: transparent;
     font-size: 1.5em;
     padding: 0;
+    margin-top: 0.5em;
 }
 
 .add-button > a > i {
@@ -409,11 +410,9 @@ button > a:link {
 }
 
 .card__conteudo {
-    height: 100%;
     width:100%;
     padding: .5em;
     font-size: 17px;
-    
 }
 
 .card__conteudo p {
@@ -533,6 +532,21 @@ button > a:link {
     padding-top: 2%;
   }
 
+  #modal2 {
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    margin: -75px 0 0 -75px;
+    position: absolute;
+    background-color: var(--cor-background-clara);
+    border-radius: 5px;
+    z-index: 99;
+    display: none;
+    float:inline-end;
+    text-align: center;
+    padding-top: 2%;
+  }
   .texto-aviso{
       text-align: center;
       padding-top: 15%;
@@ -571,9 +585,10 @@ button > a:link {
     background-color: var(--cor-principal);
 }
 /*GAMBIARRATION ENQUANTO NÃO TEM JS ONCLICK"*/
-.cards a{
+.cards > a {
     color: var(--cor-escura);
     text-decoration: none;
+    width: 100%;
 }
 
 /*nav bar dentro da página*/
