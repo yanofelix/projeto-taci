@@ -562,6 +562,7 @@ input[type="radio"] {
     text-align: center;
     background-color: var(--cor-background-clara);
     border-radius: 5px;
+    padding: 1em 0.5em;
     z-index: 99;
     display: none;
 }
@@ -574,9 +575,30 @@ input[type="radio"] {
 
 .texto-aviso {
     text-align: center;
-    padding-top: 15%;
     font-size: 18px;
     font-weight: bold;
+}
+
+.modal__btns-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.modal__btn-primary {
+    background-color: var(--cor-principal);
+}
+
+.modal__btn-secondary {
+    background-color: var(--cor-background-clara);
+}
+
+.modal__btn-primary,
+.modal__btn-secondary {
+    outline: 0;
+    border: 0;
+    width: 70px;
+    border-radius: 5px;
+    border: 2px solid var(--cor-escura);
 }
 
 
@@ -584,8 +606,6 @@ input[type="radio"] {
 
 .p-deletar-card {
     text-align: center;
-    padding-top: 0%;
-    padding-bottom: 20%;
     font-size: 15px;
     font-weight: bold;
 }
