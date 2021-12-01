@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lojistas Associados</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-wrapper">
+            <img src="/assets/img/logo-taci-menor.png" alt="">
+            <div class="linha"></div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburguer"></span>
+            </button>
+        </div>
+        <!-- navbar -->
+        <div class="background-page-toda"></div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Logistas</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Aprendizados</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Dicas e Produtos</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Bonificações</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <h1>Adicionar bonificação por venda</h1>
+        <form class="generic-form" action="formulário" method="post">
+            <div class="generic-form__box-wrapper">
+                <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label>
+                <input class="input-generic-box" type="text" placeholder="" required maxlength="20">
+            </div>
+            <div class="generic-form__box-wrapper">
+                <label style="font-weight: bold;" for="cnpj">Validade:</label>
+                <input class="input-generic-box" type="date" placeholder="" required maxlength="20">
+            </div>
+            <div class="generic-form__box-wrapper">
+                <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label>
+                <input class="input-generic-box" type="text" placeholder="" required maxlength="20">
+            </div>
+            <div class="card card-resumo">
+                <p>Lojas a serem bonificadas</p>
+                <p> C&A, Renner, Loja tio João.</p>
+            </div>
+            <div class="card card-resumo">
+                <p>Selecione um tipo de meta</p>
+                <p> Por produto: Conjunto menina maravilha; Fantasia manga rosa </p>
+            </div>
+            <div class="card card-resumo">
+                <p>Quantos produtos deverão ser vendidos?</p>
+                <p> 350 unidades</p>
+            </div>
+
+            </div>
+            <div class="next-cancel-button-wrapper">
+                <input class="cancel-button" type="submit" value="Voltar">
+                <a href="#" class="salvar"><input class="next-button" type="button" value="Próximo"></a>
+            </div>
+
+        </form>
+    </section>
+
+    <footer>
+        <div class="marca-wrapper">
+            <p>Powered by C4NGAÇO SYSTEMS</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/geral.js"></script>
+</body>
+
+</html>
