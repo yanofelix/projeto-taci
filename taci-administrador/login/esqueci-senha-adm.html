@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Taci Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
@@ -21,7 +21,9 @@
         </div>
 
         <div class="entradas">
-            <h3 class="entradas__subtitle"> Insira abaixo o seu <e-mail></e-mail></h3>
+            <h3 class="entradas__subtitle"> Insira abaixo o seu
+                <e-mail></e-mail>
+            </h3>
             <form class=login-form>
                 <!-- e-mail -->
                 <div class="login-box-wrapper">
@@ -29,7 +31,7 @@
                     <input class="input-login-box" type="text" id="e-mail" name="e-mail"><br>
                 </div>
 
-                <input class="cta-button" type="submit" value="Enviar" onclick="abrirModal();"/>
+                <input class="cta-button" type="submit" value="Enviar" onclick="abrirModal();" />
             </form>
 
             <div class="esqueci-senha"><a href="login.html">Login</a></div>
@@ -37,15 +39,17 @@
 
         <!-- Fundo modal -->
         <div id="fundo"></div>
-        <div id="modal">
+        <div id="modal" class="modal">
             <div class="texto-aviso">
                 <p>E-mail enviado com sucesso!</p>
             </div>
-            <button class="fechar" onclick="fecharModal();"><a href="login.html">Fechar</a></button>
+            <button class="modal__btn-primary" onclick="fecharModal();"><a href="login.html">Fechar</a></button>
         </div>
     </section>
     <footer>
-        <div class="marca-wrapper"><p>Powered by C4NGAÇO SYSTEMS</p></div>
+        <div class="marca-wrapper">
+            <p>Powered by C4NGAÇO SYSTEMS</p>
+        </div>
     </footer>
 
     <!-- js -->

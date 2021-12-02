@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar nova loja</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
@@ -25,32 +24,30 @@
         <div class="background-page-toda"></div>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Lojistas</a></li>
-                <!--Alterar para Lojista-->
-                <li class="nav__item"><a href="#" class="nav__link">Aprendizados</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Dicas e Produtos</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Bonificações</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Logout</a></li>
+                <li class="nav__item"><a href="./lojas-associadas.html" class="nav__link">Logistas</a></li>
+                <li class="nav__item"><a href="../aprendizados/home-aprendizado.html" class="nav__link">Aprendizados</a></li>
+                <li class="nav__item"><a href="../dicas-produtos/dicas-produtos-adm.html" class="nav__link">Dicas e Produtos</a></li>
+                <li class="nav__item"><a href="../bonificacoes-aprendizado/home-bonificacao.html" class="nav__link">Bonificações aprendizado</a></li>
+                <li class="nav__item"><a href="../bonificacoes-venda/home-bonificacoes-venda.html" class="nav__link">Bonificações venda</a></li>
+                <li class="nav__item"><a href="../faq/faq.html" class="nav__link">FAQ</a></li>
+                <li class="nav__item"><a href="../login/login.html" class="nav__link">Logout</a></li>
             </ul>
         </nav>
     </header>
     <section class="container">
         <h1>Adicionar nova loja</h1>
         <div class="upload-button-wrapper">
-            <button class="button-upload"><i class="fas fa-cloud-upload-alt"></i><span>enviar imagem</span></button>
+            <button class="button-upload" onclick="abrirModal2()"><i class="fas fa-cloud-upload-alt"></i><span>enviar imagem</span></button>
         </div>
         <form class="generic-form" action="formulário" method="post">
 
             <div class="generic-form__box-wrapper">
                 <label for="cnpj">Cnpj:</label>
-                <input class="input-generic-box" type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-000"
-                    required maxlength="16">
+                <input class="input-generic-box" type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-000" required maxlength="16">
             </div>
             <div class="generic-form__box-wrapper">
                 <label for="nome-da-loja">Nome da loja:</label>
-                <input class="input-generic-box" type="text" id="nome-da-loja" placeholder="Insira aqui" required
-                    maxlength="30">
+                <input class="input-generic-box" type="text" id="nome-da-loja" placeholder="Insira aqui" required maxlength="30">
             </div>
             <div class="generic-form__box-wrapper">
                 <label for="endereco">Endereço:</label>
@@ -58,23 +55,19 @@
             </div>
             <div class="generic-form__box-wrapper">
                 <label for="telefone">Telefone:</label>
-                <input class="input-generic-box" type="text" id="telefone" name="telefone" placeholder="(00)0000-0000"
-                    required maxlength="12">
+                <input class="input-generic-box" type="text" id="telefone" name="telefone" placeholder="(00)0000-0000" required maxlength="12">
             </div>
             <div class="generic-form__box-wrapper">
                 <label for="celular">Celular:</label>
-                <input class="input-generic-box" type="text" id="celular" name="celular" placeholder="(00)0000-0000"
-                    required maxlength="12">
+                <input class="input-generic-box" type="text" id="celular" name="celular" placeholder="(00)0000-0000" required maxlength="12">
             </div>
             <div class="generic-form__box-wrapper">
                 <label for="responsavel">Responsável:</label>
-                <input class="input-generic-box" type="text" id="responsavel" name="responsavel" required
-                    maxlength="20">
+                <input class="input-generic-box" type="text" id="responsavel" name="responsavel" required maxlength="20">
             </div>
             <div class="generic-form__box-wrapper">
                 <label for="e-mail">E-mail:</label>
-                <input type="email" class="input-generic-box" id="email" placeholder="seuemail@email.com" required
-                    maxlength="100">
+                <input type="email" class="input-generic-box" id="email" placeholder="seuemail@email.com" required maxlength="100">
             </div>
             <div class="next-cancel-button-wrapper">
                 <a href="lojas-associadas.html"><button class="cancel-button" type="button">Cancelar</button></a>
@@ -84,10 +77,16 @@
         </form>
 
         <div id="fundo"></div>
-        <div id="modal">
-            <a href="lojas-associadas.html" class="fechar" onclick="fecharModal();">Fechar</a>
+        <div id="modal" class="modal">
             <div class="texto-aviso">
                 <p>Loja adicionada com sucesso!</p>
+            </div>
+            <button class="modal__btn-primary" onclick="fecharModal()"><a href="./lojas-associadas.html">Fechar</button>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="texto-aviso">
+                <p>Imagem adicionada com sucesso</p>
+                <button class="modal__btn-primary" onclick=" fecharModal()">Fechar</button>
             </div>
         </div>
 
