@@ -6,8 +6,7 @@
     <title>Lojistas Associados</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
@@ -26,12 +25,13 @@
         <div class="background-page-toda"></div>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Logistas</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Aprendizados</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Dicas e Produtos</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Bonificações</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Logout</a></li>
+                <li class="nav__item"><a href="./lojas-associadas.html" class="nav__link">Logistas</a></li>
+                <li class="nav__item"><a href="../aprendizados/home-aprendizado.html" class="nav__link">Aprendizados</a></li>
+                <li class="nav__item"><a href="../dicas-produtos/dicas-produtos-adm.html" class="nav__link">Dicas e Produtos</a></li>
+                <li class="nav__item"><a href="../bonificacoes-aprendizado/home-bonificacao.html" class="nav__link">Bonificações aprendizado</a></li>
+                <li class="nav__item"><a href="../bonificacoes-venda/home-bonificacoes-venda.html" class="nav__link">Bonificações venda</a></li>
+                <li class="nav__item"><a href="../faq/faq.html" class="nav__link">FAQ</a></li>
+                <li class="nav__item"><a href="../login/login.html" class="nav__link">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -120,17 +120,16 @@
                     <button class="del-button" onclick="abrirModal()"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
-            
-            
-        </div> 
+
+
+        </div>
         <div id="fundo"></div>
-        <div id="modal">
-            <a href="lojas-associadas.html" class="fechar-sim" onclick=" return alert ('Esta loja será deletada, clique OK para confirmar')">Sim</a>         
-            
-            <a href="lojas-associadas.html" class="fechar-nao" onclick="fecharModal();">Não</a>
+        <div id="modal" class="modal">
             <div class="texto-aviso">
                 <p class="p-deletar-card">Você tem certeza que deseja deletar esta loja?</p>
             </div>
+            <button class="modal__btn-secondary" onclick="fecharModal()">Não</button>
+            <button class="modal__btn-primary" onclick=" return alert ('Esta loja será deletada, clique OK para confirmar')"><a href="lojas-associadas.html">Sim</a></button>
         </div>
     </section>
     <footer>
@@ -138,9 +137,10 @@
             <p>Powered by C4NGAÇO SYSTEMS</p>
         </div>
     </footer>
-    
+
     <!-- js -->
     <script type="text/javascript" src="/assets/js/geral.js"></script>
-  
+
 </body>
+
 </html>
