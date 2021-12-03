@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar vendedor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
@@ -44,18 +43,15 @@
 
             <div class="generic-form__box-wrapper">
                 <label for="cpf">CPF:</label>
-                <input class="input-generic-box" type="text" id="cpf" name="CPF" placeholder="000.000.000-00"
-                    required maxlength="16">
+                <input class="input-generic-box" type="text" id="cpf" name="CPF" placeholder="000.000.000-00" required maxlength="16">
             </div>
             <div class="generic-form__box-wrapper">
                 <label for="nome-da-loja">Nome:</label>
-                <input class="input-generic-box" type="text" id="nome" placeholder="Insira aqui" required
-                    maxlength="30">
+                <input class="input-generic-box" type="text" id="nome" placeholder="Insira aqui" required maxlength="30">
             </div>
             <div class="generic-form__box-wrapper">
                 <label for="endereco">Endereço:</label>
-                <input class="input-generic-box" type="text" id="endereco" name="endereco" placeholder="Insira aqui" required
-                    maxlength="30">
+                <input class="input-generic-box" type="text" id="endereco" name="endereco" placeholder="Insira aqui" required maxlength="30">
             </div>
             <div class="generic-form__box-wrapper">
                 <label for="endereco">CEP:</label>
@@ -71,13 +67,11 @@
             </div>
             <div class="generic-form__box-wrapper">
                 <label for="celular">Celular:</label>
-                <input class="input-generic-box" type="text" id="celular" name="celular" placeholder="00000-000"
-                    required maxlength="12">
+                <input class="input-generic-box" type="text" id="celular" name="celular" placeholder="00000-000" required maxlength="12">
             </div>
             <div class="generic-form__box-wrapper">
                 <label for="e-mail">E-mail:</label>
-                <input type="email" class="input-generic-box" id="email" placeholder="seuemail@email.com" required
-                    maxlength="100">
+                <input type="email" class="input-generic-box" id="email" placeholder="seuemail@email.com" required maxlength="100">
             </div>
             <div class="next-cancel-button-wrapper">
                 <a href="vendedores-lojista.html"><button class="cancel-button" type="button">Cancelar</button></a>
@@ -87,17 +81,17 @@
         </form>
 
         <div id="fundo"></div>
-        <div id="modal">
+        <div id="modal" class="modal">
             <div class="texto-aviso">
-                <p>Loja adicionada com sucesso!</p>
-                <a href="vendedores-lojista.html" class="fechar" onclick="fecharModal()">Fechar</a>
+                <p>vendedor adicionado com sucesso!</p>
+                <button class="modal__btn-primary" onclick="fecharModal()"><a href="./vendedores-lojista.html">Fechar</a></button>
             </div>
         </div>
-        <div id="modal2">
+        <div id="modal2" class="modal">
             <div class="texto-aviso">
                 <p>Imagem adicionada com sucesso</p>
-                <a href="add-vendedor.html" class="fechar" onclick="fecharModal()">Fechar</a>
             </div>
+            <button class="modal__btn-primary" onclick="fecharModal()">Fechar</button>
         </div>
 
     </section>

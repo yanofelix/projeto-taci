@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar loja</title>
+    <title>Adicionar produto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -24,9 +24,9 @@
         <div class="background-page-toda"></div>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="./lojas-associadas.html" class="nav__link">Logistas</a></li>
+                <li class="nav__item"><a href="../lojas-associadas/lojas-associadas.html" class="nav__link">Logistas</a></li>
                 <li class="nav__item"><a href="../aprendizados/home-aprendizado.html" class="nav__link">Aprendizados</a></li>
-                <li class="nav__item"><a href="../dicas-produtos/dicas-produtos-adm.html" class="nav__link">Dicas e Produtos</a></li>
+                <li class="nav__item"><a href="./dicas-produtos/dicas-produtos-adm.html" class="nav__link">Dicas e Produtos</a></li>
                 <li class="nav__item"><a href="../bonificacoes-aprendizado/home-bonificacao.html" class="nav__link">Bonificações aprendizado</a></li>
                 <li class="nav__item"><a href="../bonificacoes-venda/home-bonificacoes-venda.html" class="nav__link">Bonificações venda</a></li>
                 <li class="nav__item"><a href="../faq/faq.html" class="nav__link">FAQ</a></li>
@@ -35,72 +35,69 @@
         </nav>
     </header>
     <section class="container">
-        <h1>Editar dados da loja</h1>
+        <h1>Adicionar novo produto</h1>
         <div class="upload-button-wrapper">
             <button class="button-upload" onclick="abrirModal2()"><i class="fas fa-cloud-upload-alt"></i><span>enviar imagem</span></button>
         </div>
+        <form class="generic-form" action="formulário" method="post">
 
-        <form class="generic-form menos-gap" action="formulário" method="post">
             <div class="generic-form__box-wrapper">
-                <label for="cnpj">Cnpj:</label>
-                <input class="input-generic-box" type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-000" required maxlength="16">
+                <label for="nome">Nome do produto</label>
+                <input class="input-generic-box" type="text" id="nome" name="nome" required maxlength="30">
             </div>
             <div class="generic-form__box-wrapper">
-                <label for="nome-da-loja">Nome da loja:</label>
-                <input class="input-generic-box" type="text" id="nome-da-loja" name="nome da loja" placeholder="Insira aqui" required maxlength="30">
+                <label for="descricap">Descrição</label>
+                <input class="input-generic-box" type="text" id="descricao" required maxlength="30">
             </div>
             <div class="generic-form__box-wrapper">
-                <label for="endereco">Endereço:</label>
-                <input class="input-generic-box" type="text" id="endereco" name="endereço" placeholder="Insira aqui" required maxlength="50">
+                <label for="categoria">Categoria</label>
+                <input class="input-generic-box" type="text" id="categoria" name="categoria" required maxlength="50">
             </div>
             <div class="generic-form__box-wrapper">
-                <label for="telefone">Telefone:</label>
-                <input class="input-generic-box" type="text" id="telefone" name="telefone" placeholder="(00)0000-0000" required maxlength="12">
+                <label for="marca">Marca</label>
+                <input class="input-generic-box" type="text" id="marca" name="marca" required maxlength="30">
             </div>
             <div class="generic-form__box-wrapper">
-                <label for="celular">Celular:</label>
-                <input class="input-generic-box" type="text" id="celular" name="celular" placeholder="(00)0000-0000" required maxlength="12">
+                <label for="cor">Cor</label>
+                <input class="input-generic-box" type="text" id="cor" name="cor" required maxlength="12">
             </div>
             <div class="generic-form__box-wrapper">
-                <label for="responsavel">Responsável:</label>
-                <input class="input-generic-box" type="text" id="responsavel" name="responsavel" placeholder="Insira aqui" required maxlength="20">
+                <label for="cod-interno">Cód. interno</label>
+                <input class="input-generic-box" type="text" id="cod-interno" name="cod-interno" required maxlength="20">
             </div>
             <div class="generic-form__box-wrapper">
-                <label for="e-mail">E-mail:</label>
-                <input class="input-generic-box" type="text" id="e-mail" name="e-mail" placeholder="seuemail@email.com" required maxlength="100">
+                <label for="cod-barras">Cód barras</label>
+                <input type="email" class="input-generic-box" id="cod-barras" required maxlength="100">
             </div>
             <div class="next-cancel-button-wrapper">
-                <a href="lojas-associadas.html"><button class="cancel-button" type="button">Cancelar</button></a>
-
-                <a class="salvar" onclick="abrirModal();"><button type="button" id="botao" class="next-button"
-                        disabled="disabled">Salvar</button></a>
+                <a href="./dicas-produtos-adm.html"><button class="cancel-button" type="button">Cancelar</button></a>
+                <a class="salvar" onclick="abrirModal();"><button type="button" id="botao" class="next-button" disabled="disabled">Salvar</button></a>
             </div>
 
         </form>
 
-        </div>
         <div id="fundo"></div>
         <div id="modal" class="modal">
             <div class="texto-aviso">
-                <p>Loja editada com sucesso!</p>
+                <p>Produto adicionado com sucesso!</p>
             </div>
-            <button class="modal__btn-primary" onclick="fecharModal()"><a href="./lojas-associadas.html">Fechar</a></button>
+            <button class="modal__btn-primary" onclick="fecharModal()">Não</button>
         </div>
         <div id="modal2" class="modal">
             <div class="texto-aviso">
                 <p>Imagem adicionada com sucesso</p>
-                <button class="modal__btn-primary" onclick=" fecharModal()">Fechar</button>
             </div>
+            <button class="modal__btn-primary" onclick="fecharModal()">Fechar</button>
         </div>
 
     </section>
     <footer>
-        <div class="marca-wrapper ">
+        <div class="marca-wrapper">
             <p>Powered by C4NGAÇO SYSTEMS</p>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js "></script>
-    <script type="text/javascript " src="/assets/js/geral.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/geral.js"></script>
 </body>
 
 </html>
