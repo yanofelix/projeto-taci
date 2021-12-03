@@ -347,7 +347,7 @@ input[type="radio"] {
 
 .cards {
     display: grid;
-    gap: 0.5em;
+    gap: 0.7em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -370,8 +370,7 @@ input[type="radio"] {
     background-color: var(--cor-clara);
     border: 2px solid var(--cor-escura);
     border-radius: 13px;
-    margin-top: 8px;
-    overflow: hidden;
+    overflow:hidden;
     height: fit-content;
     box-shadow: var(--bs);
 }
@@ -424,6 +423,10 @@ input[type="radio"] {
     margin-top: 1em;
 }
 
+.card-section{
+    margin-top: 20px;
+}
+
 .card img {
     width: 100%;
     height: 100%;
@@ -473,7 +476,37 @@ input[type="radio"] {
 
 .product-summary p {
     display: inline;
-    margin-right: 20px;
+}
+
+/*bonificações vendedor*/
+.bonification-expiration{
+    float: left;
+    max-width: 80%;
+    margin: 0 20px 5px 0;
+    font-size: .8em;
+}
+
+.bonification-expiration p{
+    display: inline;
+    color: grey;
+}
+
+.bonification-info{
+    float: left;
+    width: 60%;
+    padding: 5px 0 0 5px;
+    font-size: .8em;
+}
+
+.bonification-info p{
+    display: inline;
+}
+
+.bonification-type{
+    float: right;
+    color: grey;
+    font-weight: bold;
+    font-size: .8em;
 }
 
 .edit-del-button-wrapper {
