@@ -322,7 +322,7 @@ button > a:link {
  /* ----------CARDS ---------- */
  .cards {
      display: grid;
-     gap: 0.5em;
+     gap: 0.7em;
      padding-top: 1em;
      padding-bottom: 1em;
  }
@@ -345,7 +345,6 @@ button > a:link {
     background-color: var(--cor-clara);
     border: 2px solid var(--cor-escura);
     border-radius: 13px;
-    margin-top: 14px;
     overflow:hidden;
     height: fit-content;
     box-shadow: var(--bs);
