@@ -1,0 +1,44 @@
+.content-view{
+    background-color: white;
+    width: 100%;
+    padding: 5px 5px 20px 5px;
+    margin-top: 1.5em;
+    border-radius: 5px 5px 0 0;
+}
+
+.bonification-info_view{
+    width: 100%;
+    padding: 5px 0 0 5px;
+    color: grey;
+}
+
+.bonification-info_view p{
+    display: inline;
+    max-width: 100%;
+    padding: 5px 0 0 5px;
+}
+
+.training-list li{
+    text-decoration: underline;
+    display: block;
+    width: 100%;
+}
+.training-list a{
+    margin-top: 20px;
+    width: 80%;
+    float: left;
+}
+
+.training-list i{
+    margin-top: 20px;
+    width: 20%;
+    float: right;
+}
+
+.fa-check{
+    color: green;
+}
+
+.fa-times{
+    color: red;
+}
