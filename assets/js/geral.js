@@ -24,6 +24,11 @@ function abrirModal2() {
     document.getElementById('modal2').style.display = 'block';
 }
 
+function modalConfirmacao() {
+    document.getElementById('modal').style.display = 'none';
+    document.getElementById('modal2').style.display = 'block';
+}
+
 var inputs = $('input').on('keyup', verificarInputs);
 
 function verificarInputs() {
