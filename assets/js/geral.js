@@ -36,3 +36,21 @@ $('li.faq-resposta').hide();
 $('li.faq-pergunta').click(function() {
     $(this).next().slideToggle();
 });
+
+/* Ativa o botão de login*/
+function recaptcha_callBack() {
+    var ctaBtn = document.querySelector('.cta-button');
+    ctaBtn.removeAttribute('disabled');
+    ctaBtn.style.cursor = 'pointer';
+    ctaBtn.style.background = "#EB8FA9";
+    ctaBtn.style.color = '#303030'
+}
+
+/* Controle de fluxo do login  */
+function mySubmit(){
+    var action = $('#option').val()
+    if(action !== '') {
+        document.getElementById('form-login').action = action;
+        document.getElementById('form-login').submit();
+    }
+  }

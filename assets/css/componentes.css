@@ -73,13 +73,21 @@ button>a:link {
 
 .cta-button {
     display: block;
-    font-size: 1.5em;
-    color: var(--cor-clara);
-    background: var(--cor-background-escura);
     width: 100%;
     height: 2.5em;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--cor-principal);
+    border: 2px var(--cor-principal) solid;
     border-radius: 6px;
     margin: 0 auto;
+    cursor: not-allowed;
+}
+
+.cta-login {
+    color: var(--cor-escura);
+    background-color: var(--cor-principal);
+    cursor: pointer;
 }
 
 .next-cancel-button-wrapper {
@@ -290,6 +298,7 @@ button>a:link {
     margin-bottom: 0.5em;
 }
 
+
 /* box de pesquisa */
 
 .input-search-box {
@@ -341,7 +350,7 @@ input[type="radio"] {
 .radio-btn-wrapper {
     display: flex;
     gap: 0.5em
- }
+}
 
 
 /* ----------CARDS ---------- */
@@ -371,7 +380,7 @@ input[type="radio"] {
     background-color: var(--cor-clara);
     border: 2px solid var(--cor-escura);
     border-radius: 13px;
-    overflow:hidden;
+    overflow: hidden;
     height: fit-content;
     box-shadow: var(--bs);
 }
@@ -424,7 +433,7 @@ input[type="radio"] {
     margin-top: 1em;
 }
 
-.card-section{
+.card-section {
     margin-top: 20px;
 }
 
@@ -479,31 +488,33 @@ input[type="radio"] {
     display: inline;
 }
 
+
 /*bonificações vendedor*/
-.bonification-expiration{
+
+.bonification-expiration {
     float: left;
     max-width: 80%;
     margin: 0 20px 5px 0;
     font-size: .8em;
 }
 
-.bonification-expiration p{
+.bonification-expiration p {
     display: inline;
     color: grey;
 }
 
-.bonification-info{
+.bonification-info {
     float: left;
     width: 60%;
     padding: 5px 0 0 5px;
     font-size: .8em;
 }
 
-.bonification-info p{
+.bonification-info p {
     display: inline;
 }
 
-.bonification-type{
+.bonification-type {
     float: right;
     color: grey;
     font-weight: bold;
