@@ -36,3 +36,12 @@ $('li.faq-resposta').hide();
 $('li.faq-pergunta').click(function() {
     $(this).next().slideToggle();
 });
+
+function recaptcha_callBack() {
+    var ctaBtn = document.querySelector('.cta-button');
+    ctaBtn.removeAttribute('disabled');
+    ctaBtn.style.cursor = 'pointer';
+    ctaBtn.style.background = "#EB8FA9";
+    ctaBtn.style.color = '#303030'
+
+}
