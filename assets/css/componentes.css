@@ -628,7 +628,7 @@ input[type="radio"] {
 .modal__btn-secondary {
     outline: 0;
     border: 0;
-    width: 70px;
+    width: 80px;
     border-radius: 5px;
     border: 2px solid var(--cor-escura);
 }
