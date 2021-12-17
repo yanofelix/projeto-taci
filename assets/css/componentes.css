@@ -635,6 +635,13 @@ input[type="radio"] {
     background-color: var(--cor-background-clara);
 }
 
+.modal__btn-secondary i{
+    border: none; 
+    color: green; 
+    font-size: 1.5em;  
+}
+
+
 .modal__btn-primary,
 .modal__btn-secondary {
     outline: 0;
