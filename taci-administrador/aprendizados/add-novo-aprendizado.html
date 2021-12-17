@@ -55,13 +55,21 @@
             <input class="box-edicao__descricao" type="text" placeholder="Descrição" maxlength="200px">
         </div>
         <div class="next-cancel-button-wrapper">
-            <button class="cancel-button" type="submit" value="cancelar">Cancelar</button>
-            <button class="next-button" type="button" value="Salvar" onclick="abrirmModal()">Salvar</button>
+            <a href="lojas-associadas.html"><button class="cancel-button" type="button">Cancelar</button></a>
+            <a class="salvar" onclick="abrirModal();"><button type="button" id="botao" class="next-button" >Salvar</button></a>
         </div>
-        <div id="modal3" class="modal">
-            <div class="texto-aviso" onclick="fecharModal()">
-                <p class="p-deletar-card">Aprendizado deletado com sucesso</p>
-                <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+
+        <div id="fundo"></div>
+        <div id="modal" class="modal">
+            <div class="texto-aviso">
+                <p>Aprendizado adicionado com sucesso!</p>
+            </div>
+            <button class="modal__btn-primary" onclick="fecharModal()"><a href="./lojas-associadas.html">Fechar</button>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="texto-aviso">
+                <p>Imagem adicionada com sucesso</p>
+                <button class="modal__btn-primary" onclick=" fecharModal()">Fechar</button>
             </div>
         </div>
     </section>
