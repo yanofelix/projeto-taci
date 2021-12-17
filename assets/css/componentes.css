@@ -604,8 +604,9 @@ input[type="radio"] {
     min-width: 200px;
     text-align: center;
     background-color: var(--cor-background-clara);
+    box-shadow: var(--box-shadow);
     border-radius: 5px;
-    padding: 1em 0.5em;
+    padding: 1em;
     z-index: 99;
     display: none;
 }
@@ -619,20 +620,30 @@ input[type="radio"] {
 .texto-aviso {
     text-align: center;
     font-size: 18px;
-    font-weight: bold;
 }
 
 .modal__btns-wrapper {
     display: flex;
     justify-content: center;
+    gap: 1em;
 }
 
 .modal__btn-primary {
     background-color: var(--cor-principal);
+    border: 0;
 }
 
 .modal__btn-secondary {
     background-color: var(--cor-background-clara);
+    border: solid 1px var(--cor-escura)
+}
+.modal__btn-primary,
+.modal__btn-secondary {
+    outline: 0;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
 }
 
 .modal__btn-secondary i{
@@ -642,14 +653,6 @@ input[type="radio"] {
 }
 
 
-.modal__btn-primary,
-.modal__btn-secondary {
-    outline: 0;
-    border: 0;
-    width: 80px;
-    border-radius: 5px;
-    border: 2px solid var(--cor-escura);
-}
 
 
 /* ajuste caixa de aviso deletar card */
