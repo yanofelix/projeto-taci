@@ -24,13 +24,12 @@
         <div class="background-page-toda"></div>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="./lojas-associadas.html" class="nav__link">Lojistas</a></li>
+                <li class="nav__item"><a href="../lojas-associadas/lojas-associadas.html" class="nav__link">Lojistas</a></li>
                 <li class="nav__item"><a href="../aprendizados/home-aprendizado.html" class="nav__link">Aprendizados</a></li>
                 <li class="nav__item"><a href="../dicas-produtos/dicas-produtos-adm.html" class="nav__link">Dicas e Produtos</a></li>
-                <li class="nav__item"><a href="../bonificacoes-aprendizado/home-bonificacao.html" class="nav__link">Bonificações aprendizado</a></li>
-                <li class="nav__item"><a href="../bonificacoes-venda/home-bonificacoes-venda.html" class="nav__link">Bonificações venda</a></li>
+                <li class="nav__item"><a href="../bonificacoes-aprendizado/home-bonificacao.html" class="nav__link">Bonificações</a></li>
                 <li class="nav__item"><a href="../faq/faq.html" class="nav__link">FAQ</a></li>
-                <li class="nav__item"><a href="../login/login.html" class="nav__link">Logout</a></li>
+                <li class="nav__item"><a href="../../index.html" class="nav__link">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -77,19 +76,20 @@
         </form>
 
         <div id="fundo"></div>
-        <div id="modal" class="modal">
-            <div class="texto-aviso">
-                <p>Loja adicionada com sucesso!</p>
+        <a href="./lojas-associadas.html"> 
+            <div id="modal" class="modal" onclick="fecharModal()">
+                <div class="texto-aviso">
+                    <p>Loja adicionada com sucesso!</p>
+                    <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+                </div>
             </div>
-            <button class="modal__btn-primary" onclick="fecharModal()"><a href="./lojas-associadas.html">Fechar</button>
-        </div>
-        <div id="modal2" class="modal">
+        </a>
+        <div id="modal2" class="modal" onclick="fecharModal()">
             <div class="texto-aviso">
                 <p>Imagem adicionada com sucesso</p>
-                <button class="modal__btn-primary" onclick=" fecharModal()">Fechar</button>
+                <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
             </div>
         </div>
-
     </section>
     <footer>
         <div class="marca-wrapper">

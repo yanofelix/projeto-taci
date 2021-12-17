@@ -24,13 +24,13 @@
         <div class="background-page-toda"></div>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Lojistas</a></li>
-                <!--Alterar para Lojista-->
-                <li class="nav__item"><a href="#" class="nav__link">Aprendizados</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Dicas e Produtos</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Bonificações</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Logout</a></li>
+                <li class="nav__item"><a href="./Home-lojista.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="./vendedores-lojista.html" class="nav__link">Vendedores</a></li>
+                <li class="nav__item"><a href="./aprendizados.html" class="nav__link">Aprendizados</a></li>
+                <li class="nav__item"><a href="./dicas-e-produtos.html" class="nav__link">Dicas e Produtos</a></li>
+                <li class="nav__item"><a href="./bonificacoes.html" class="nav__link">Bonificações</a></li>
+                <li class="nav__item"><a href="./faq-lojista.html" class="nav__link">FAQ</a></li>
+                <li class="nav__item"><a href="../index.html" class="nav__link">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -81,19 +81,20 @@
         </form>
 
         <div id="fundo"></div>
-        <div id="modal" class="modal">
-            <div class="texto-aviso">
-                <p>vendedor adicionado com sucesso!</p>
-                <button class="modal__btn-primary" onclick="fecharModal()"><a href="./vendedores-lojista.html">Fechar</a></button>
+        <a href="./vendedores-lojista.html"> 
+            <div id="modal" class="modal" onclick="fecharModal()">
+                <div class="texto-aviso">
+                    <p>vendedor adicionado com sucesso!</p>
+                    <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+                </div>
             </div>
-        </div>
-        <div id="modal2" class="modal">
+        </a>
+        <div id="modal2" class="modal" onclick="fecharModal()">
             <div class="texto-aviso">
                 <p>Imagem adicionada com sucesso</p>
+                <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
             </div>
-            <button class="modal__btn-primary" onclick="fecharModal()">Fechar</button>
         </div>
-
     </section>
     <footer>
         <div class="marca-wrapper">
