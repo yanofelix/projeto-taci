@@ -76,19 +76,20 @@
         </form>
 
         <div id="fundo"></div>
-        <div id="modal" class="modal">
-            <div class="texto-aviso">
-                <p>Loja adicionada com sucesso!</p>
+        <a href="./lojas-associadas.html"> 
+            <div id="modal" class="modal" onclick="fecharModal()">
+                <div class="texto-aviso">
+                    <p>Loja adicionada com sucesso!</p>
+                    <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+                </div>
             </div>
-            <button class="modal__btn-primary" onclick="fecharModal()"><a href="./lojas-associadas.html">Fechar</button>
-        </div>
+        </a>
         <div id="modal2" class="modal">
             <div class="texto-aviso">
                 <p>Imagem adicionada com sucesso</p>
                 <button class="modal__btn-primary" onclick=" fecharModal()">Fechar</button>
             </div>
         </div>
-
     </section>
     <footer>
         <div class="marca-wrapper">
