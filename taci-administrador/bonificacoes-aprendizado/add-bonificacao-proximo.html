@@ -57,12 +57,21 @@
                 </div>
 
                 <div class="next-cancel-button-wrapper">
-                    <input class="cancel-button" type="submit" value="Voltar">
-                    <a href="#" class="salvar"><input class="next-button" type="button" value="Salvar"></a>
+                    <a href="./add-bonificacao-selecionar-videos.html" class="salvar"><input class="back-button" type="button" value="voltar"></a>
+                    <a onclick="abrirModal()"><input class="next-button" type="button" value="Salvar"></a>
                 </div>
             </form>
+            <div id="fundo"></div>
+            <a href="./bonificacao-aprendizado.html"> 
+                <div id="modal" class="modal" onclick="fecharModal()">
+                    <div class="texto-aviso">
+                        <p>Bonificação adicionada com sucesso!</p>
+                        <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+                    </div>
+                </div>
+            </a>
     </section>
-
+    
     <footer>
         <div class="marca-wrapper">
             <p>Powered by C4NGAÇO SYSTEMS</p>
