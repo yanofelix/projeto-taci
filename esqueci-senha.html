@@ -22,7 +22,7 @@
 
         <div class="entradas">
             <h3 class="entradas__subtitle">Entre seus dados</h3>
-            <form class="login-form">
+            <form class="login-form" id="esqueci-senha">
                     <select name="site" id="option">
                         <option value="" selected>-- selecione o módulo --</option>
                         <option value="/taci-administrador/login/alterar-senha.html">Administrativo</option>
@@ -49,7 +49,7 @@
             </div>
             <i class="fas fa-plus-circle"></i>
             <div class="modal__btns-wrapper">
-                <button class="modal__btn-primary" onclick="goHome()">Ffechar</button>
+                <button class="modal__btn-primary" onclick="goHome()">Fechar</button>
             </div>
         </div>
 
@@ -65,9 +65,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/js/geral.js"></script>
     <script>
-        function goHome(){
-            document.getElementsByClassName('login-form').action = 'index.html';
-            document.getElementsByClassName('login-form').submit();
+        function goHome() {
+            document.getElementById('esqueci-senha').action ='/index.html';
+            document.getElementById('esqueci-senha').submit();
         }
     </script>
 </body>
