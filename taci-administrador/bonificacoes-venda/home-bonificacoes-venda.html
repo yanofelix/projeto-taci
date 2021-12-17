@@ -98,6 +98,28 @@
     <button class="edit-button"><a href="./edit-novaloja.html"><i class="fas fa-edit"></i></a></button>
     <button class="del-button"><a class="#" onclick="abrirModal();"><i class="fas fa-trash-alt"></i></a></button>
 </div>
+<div id="fundo" onclick="fecharModal()"></div>
+<div id="modal" class="modal">
+    <div class="texto-aviso">
+        <p class="p-deletar-card">Você tem certeza que deseja deletar esta loja?</p>
+    </div>
+    <button class="modal__btn-secondary" onclick="fecharModal()">Não</button>
+    <button class="modal__btn-primary" onclick="modalConfirmacao()">Sim</button>
+</div>
+<div id="modal2" class="modal">
+    <div class="texto-aviso">
+        <p class="p-deletar-card">Esta loja será deletada, confirme a senha para continuar</p>
+        <input class ="input-passw-box" type="password" name="senha" placeholder="********">
+    </div>
+    <button class="modal__btn-secondary" onclick="fecharModal()">Voltar</button>
+    <button class="modal__btn-primary" onclick="modalConclusao()">OK</button>
+</div>
+<div id="modal3" class="modal">
+    <div class="texto-aviso" onclick="fecharModal()">
+        <p class="p-deletar-card">Loja deletada com sucesso</p>
+        <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+    </div>
+</div>
 </div>
     </section>
     <footer>
