@@ -81,17 +81,19 @@
         </form>
 
         <div id="fundo"></div>
-        <div id="modal" class="modal">
+        <a href="./vendedores-lojista.html"> 
+            <div id="modal" class="modal" onclick="fecharModal()">
+                <div class="texto-aviso">
+                    <p>vendedor editado com sucesso!</p>
+                    <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+                </div>
+            </div>
+        </a>
+        <div id="modal2" class="modal" onclick="fecharModal()">
             <div class="texto-aviso">
-                <p>Vendedor editado com sucesso!</p>
+                <p>Imagem editada com sucesso</p>
             </div>
-            <button class="modal__btn-primary " onclick="fecharModal()"><a href="./vendedores-lojista.html">Fechar</a></button>
-        </div>
-        <div id="modal2 " class="modal ">
-            <div class="texto-aviso ">
-                <p>Imagem adicionada com sucesso</p>
-            </div>
-            <button class="modal__btn-primary" onclick="fecharModal()">Fechar</button>
+            <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
         </div>
 
     </section>
