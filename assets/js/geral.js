@@ -12,6 +12,7 @@ function fecharModal() {
     document.getElementById('fundo').style.display = 'none';
     document.getElementById('modal').style.display = 'none';
     document.getElementById('modal2').style.display = 'none';
+    document.getElementById('modal3').style.display = 'none';
 }
 
 function abrirModal() {
@@ -27,6 +28,11 @@ function abrirModal2() {
 function modalConfirmacao() {
     document.getElementById('modal').style.display = 'none';
     document.getElementById('modal2').style.display = 'block';
+}
+
+function modalConclusao() {
+    document.getElementById('modal2').style.display = 'none';
+    document.getElementById('modal3').style.display = 'block';
 }
 
 var inputs = $('input').on('keyup', verificarInputs);
