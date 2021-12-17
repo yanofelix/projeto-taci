@@ -76,19 +76,20 @@
         </form>
 
         <div id="fundo"></div>
-        <div id="modal" class="modal">
-            <div class="texto-aviso">
-                <p>Produto adicionado com sucesso!</p>
+        <a href="./dicas-produtos-adm.html"> 
+            <div id="modal" class="modal" onclick="fecharModal()">
+                <div class="texto-aviso">
+                    <p>Produto adicionada com sucesso!</p>
+                    <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+                </div>
             </div>
-            <button class="modal__btn-primary" onclick="fecharModal()">Não</button>
-        </div>
-        <div id="modal2" class="modal">
+        </a>
+        <div id="modal2" class="modal" onclick="fecharModal()">
             <div class="texto-aviso">
                 <p>Imagem adicionada com sucesso</p>
+                <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
             </div>
-            <button class="modal__btn-primary" onclick="fecharModal()">Fechar</button>
         </div>
-
     </section>
     <footer>
         <div class="marca-wrapper">
