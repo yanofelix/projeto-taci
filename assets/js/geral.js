@@ -17,22 +17,22 @@ function fecharModal() {
 
 function abrirModal() {
     document.getElementById('fundo').style.display = 'block';
-    document.getElementById('modal').style.display = 'block';
+    document.getElementById('modal').style.display = 'grid';
 }
 
 function abrirModal2() {
     document.getElementById('fundo').style.display = 'block';
-    document.getElementById('modal2').style.display = 'block';
+    document.getElementById('modal2').style.display = 'grid';
 }
 
 function modalConfirmacao() {
     document.getElementById('modal').style.display = 'none';
-    document.getElementById('modal2').style.display = 'block';
+    document.getElementById('modal2').style.display = 'grid';
 }
 
 function modalConclusao() {
     document.getElementById('modal2').style.display = 'none';
-    document.getElementById('modal3').style.display = 'block';
+    document.getElementById('modal3').style.display = 'grid';
 }
 
 var inputs = $('input').on('keyup', verificarInputs);
