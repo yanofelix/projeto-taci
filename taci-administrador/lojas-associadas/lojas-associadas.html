@@ -25,13 +25,12 @@
         <div class="background-page-toda"></div>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="./lojas-associadas.html" class="nav__link">Lojistas</a></li>
+                <li class="nav__item"><a href="../lojas-associadas/lojas-associadas.html" class="nav__link">Lojistas</a></li>
                 <li class="nav__item"><a href="../aprendizados/home-aprendizado.html" class="nav__link">Aprendizados</a></li>
                 <li class="nav__item"><a href="../dicas-produtos/dicas-produtos-adm.html" class="nav__link">Dicas e Produtos</a></li>
-                <li class="nav__item"><a href="../bonificacoes-aprendizado/home-bonificacao.html" class="nav__link">Bonificações aprendizado</a></li>
-                <li class="nav__item"><a href="../bonificacoes-venda/home-bonificacoes-venda.html" class="nav__link">Bonificações venda</a></li>
+                <li class="nav__item"><a href="../bonificacoes-aprendizado/home-bonificacao.html" class="nav__link">Bonificações</a></li>
                 <li class="nav__item"><a href="../faq/faq.html" class="nav__link">FAQ</a></li>
-                <li class="nav__item"><a href="../login/login.html" class="nav__link">Logout</a></li>
+                <li class="nav__item"><a href="../../index.html" class="nav__link">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -121,29 +120,33 @@
                 </div>
             </div>
 
-
         </div>
         <div id="fundo" onclick="fecharModal()"></div>
         <div id="modal" class="modal">
             <div class="texto-aviso">
-                <p class="p-deletar-card">Você tem certeza que deseja deletar esta loja?</p>
+                <p>Você tem certeza que deseja deletar esta loja?</p>
             </div>
-            <button class="modal__btn-secondary" onclick="fecharModal()">Não</button>
-            <button class="modal__btn-primary" onclick="modalConfirmacao()">Sim</button>
+            <div class="modal__btns-wrapper">
+                <button class="modal__btn-secondary" onclick="fecharModal()">Não</button>
+                <button class="modal__btn-primary" onclick="modalConfirmacao()">Sim</button>
+            </div>
         </div>
         <div id="modal2" class="modal">
             <div class="texto-aviso">
-                <p class="p-deletar-card">Esta loja será deletada, confirme a senha para continuar</p>
-                <input class ="input-passw-box" type="password" name="senha" placeholder="********">
+                <p>Esta loja será deletada, confirme a senha para continuar</p>
+        
             </div>
-            <button class="modal__btn-secondary" onclick="fecharModal()">Voltar</button>
-            <button class="modal__btn-primary" onclick="modalConclusao()">OK</button>
+            <input class="input-passw-box" type="password" name="senha" placeholder="********">
+            <div class="modal__btns-wrapper">
+                <button class="modal__btn-secondary" onclick="fecharModal()">Voltar</button>
+                <button class="modal__btn-primary" onclick="modalConclusao()">OK</button>
+            </div>
         </div>
         <div id="modal3" class="modal">
             <div class="texto-aviso" onclick="fecharModal()">
-                <p class="p-deletar-card">Loja deletada com sucesso</p>
-                <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+                <p>Loja deletada com sucesso!</p>
             </div>
+            <i class="fas fa-check-circle"></i>
         </div>
     </section>
     <footer>

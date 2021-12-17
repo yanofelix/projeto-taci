@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="html-login">
 
 <head>
     <meta charset="UTF-8">
@@ -14,37 +14,45 @@
     <section id="wrapper-login">
         <div class="wrapper-do-header">
             <div class="logo">
-                <div class="img-wrapper"><img src="../../assets/img/logo-taci.png" alt=""></div>
+                <div class="img-wrapper"><img src="/assets/img/logo-taci.png" alt=""></div>
                 <div class="linha-login"></div>
             </div>
-            <h1>Esqueci minha senha</h1>
+            <h1>Recuperar senha</h1>
         </div>
 
         <div class="entradas">
-            <h3 class="entradas__subtitle"> Insira abaixo o seu
-                <e-mail></e-mail>
-            </h3>
-            <form class=login-form>
+            <h3 class="entradas__subtitle">Entre seus dados</h3>
+            <form class="login-form" id="esqueci-senha">
+                    <select name="site" id="option">
+                        <option value="" selected>-- selecione o módulo --</option>
+                        <option value="/taci-administrador/login/alterar-senha.html">Administrativo</option>
+                        <option value="/taci-lojista/login/alterar-senha.html">Lojista</option>
+                        <option value="/taci-vendedor/login/alterar-senha.html">Vendedor</option>
+                    </select>  
                 <!-- e-mail -->
                 <div class="login-box-wrapper">
-                    <label for="e-mail">E-mail</label><br>
-                    <input class="input-login-box" type="text" id="e-mail" name="e-mail"><br>
+                    <label for="e-mail">E-mail</label>
+                    <input class="input-login-box" type="text" id="e-mail" name="e-mail" placeholder="meu-email@email.com">
                 </div>
-
-                <input class="cta-button cta-login" type="submit" value="Enviar" onclick="abrirModal();" />
+            
             </form>
+            <button class="cta-button cta-login" onclick="abrirModal()">Enviar</button>
 
-            <div class="esqueci-senha"><a href="login.html">Login</a></div>
+            <div class="esqueci-senha"><a href="./index.html">Login</a></div>
         </div>
 
         <!-- Fundo modal -->
         <div id="fundo"></div>
         <div id="modal" class="modal">
             <div class="texto-aviso">
-                <p>E-mail enviado com sucesso!</p>
+                <p>Email enviado!</p>
             </div>
-            <button class="modal__btn-primary" onclick="fecharModal();"><a href="login.html">Fechar</a></button>
+            <i class="fas fa-check-circle"></i>
+            <div class="modal__btns-wrapper">
+                <button class="modal__btn-primary" onclick="goHome()">Fechar</button>
+            </div>
         </div>
+
     </section>
     <footer>
         <div class="marca-wrapper">
@@ -53,6 +61,13 @@
     </footer>
 
     <!-- js -->
+    <script src='https://www.google.com/recaptcha/api.js?hl=pt-br'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../../assets/js/geral.js"></script>
+    <script type="text/javascript" src="/assets/js/geral.js"></script>
+    <script>
+        function goHome() {
+            document.getElementById('esqueci-senha').action ='/index.html';
+            document.getElementById('esqueci-senha').submit();
+        }
+    </script>
 </body>

@@ -45,11 +45,6 @@
     font-size: 10px;
 }
 
-.box-edicao__wrappers>input {
-    border-radius: 5px;
-}
-
-
 /* ---------- BOTÕES ---------- */
 
 
@@ -120,6 +115,16 @@ button>a:link {
     font-weight: 750;
 }
 
+.back-button {
+    font-size: 16px;
+    min-width: 90px;
+    padding: .7rem;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: var(--bs);
+    color: var(--cor-escura);
+    /* margin adicionada*/
+}
 
 /* botão negativo */
 
@@ -257,8 +262,7 @@ button>a:link {
 /* box de senha do span box */
 
 .input-passw-box {
-    margin-bottom: 1rem;
-    height: 2em;
+    height: 1.7em;
     border-radius: 5px;
 }
 
@@ -604,10 +608,12 @@ input[type="radio"] {
     min-width: 200px;
     text-align: center;
     background-color: var(--cor-background-clara);
+    box-shadow: var(--box-shadow);
     border-radius: 5px;
-    padding: 1em 0.5em;
+    padding: 1em;
     z-index: 99;
     display: none;
+    gap: 1.3em;
 }
 
 #modal1,
@@ -619,37 +625,47 @@ input[type="radio"] {
 .texto-aviso {
     text-align: center;
     font-size: 18px;
-    font-weight: bold;
+}
+
+.texto-aviso p {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    font-weight: 550;
 }
 
 .modal__btns-wrapper {
     display: flex;
     justify-content: center;
+    gap: .65em;
 }
 
 .modal__btn-primary {
     background-color: var(--cor-principal);
+    border: 0;
 }
 
 .modal__btn-secondary {
     background-color: var(--cor-background-clara);
+    border: solid 1px var(--cor-escura)
+}
+.modal__btn-primary,
+.modal__btn-secondary {
+    outline: 0;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
 }
 
-.modal__btn-secondary i{
+.modal i{
     border: none; 
     color: green; 
     font-size: 1.5em;  
 }
 
 
-.modal__btn-primary,
-.modal__btn-secondary {
-    outline: 0;
-    border: 0;
-    width: 80px;
-    border-radius: 5px;
-    border: 2px solid var(--cor-escura);
-}
 
 
 /* ajuste caixa de aviso deletar card */

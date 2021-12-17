@@ -56,7 +56,8 @@
 
 /* Login form */
 .login-form {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 1em;
     min-height: 341px;
 }
@@ -72,9 +73,10 @@
 .login-box-wrapper {
     display: grid;
     gap: .3em;
+    height: fit-content;
 }
 
-.login-form label {
+.login-box-wrapper label {
     margin-left: 3px;
     font-size: 1.1em;
     padding-left: 3px;
