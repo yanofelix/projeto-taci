@@ -34,48 +34,53 @@
         </nav>
     </header>
     <section class="container">
-        <h1>Adicionar bonificação por venda</h1>
+        <h1>Selecione as lojas que terão acesso a bonificação: $Nome</h1>
+
+        <input type="search" class="input-search-box" placeholder="Pesquisar Lojas">
+        <section class="filtersec">
+            <button class="filtersec__btn">Selecionar todas</button>
+        </section><br>
         <form class="generic-form" action="formulário" method="post">
             <div class="generic-form__box-wrapper">
-                <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label>
-                <input class="input-generic-box" type="text" placeholder="" required maxlength="20">
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">C&A</label>
             </div>
             <div class="generic-form__box-wrapper">
-                <label style="font-weight: bold;" for="cnpj">Validade:</label>
-                <input class="input-generic-box" type="date" placeholder="" required maxlength="20">
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Marisa</label>
             </div>
             <div class="generic-form__box-wrapper">
-                <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label>
-                <input class="input-generic-box" type="text" placeholder="" required maxlength="20">
-            </div>
-            <div class="card card-resumo">
-                <p>Lojas a serem bonificadas</p>
-                <p> C&A, Renner, Loja tio João.</p>
-            </div>
-            <div class="card card-resumo">
-                <p>Selecione um tipo de meta</p>
-                <p> Por produto: Conjunto menina maravilha; Fantasia manga rosa </p>
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Renner</label>
             </div>
             <div class="generic-form__box-wrapper">
-                <label style="font-weight: bold;" for="cnpj">Quantos produtos deverão ser vendidos?</label>
-                <input class="input-generic-box" type="text" value="350 unidades">
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Americanas</label>
             </div>
+            <div class="generic-form__box-wrapper">
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Loja do tio João</label>
+            </div>
+            <div class="generic-form__box-wrapper">
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Loja moda infantil</label>
+            </div>
+            <div class="generic-form__box-wrapper">
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Loja pipoco do trovão</label>
             </div>
             <div class="next-cancel-button-wrapper">
-                <a href="add-bonificacao-venda.html" class="voltar"><input class="back-button" type="button" value="voltar"></a>
-                <a href="add-bonificacao-venda-sel-lojas.html" onclick="abrirModal()"><input class="next-button" type="button" value="Próximo"></a>
+                <a href="add-bonificacao-venda-proximo.html" class="voltar"><input class="back-button" type="button" value="voltar"></a>
+                <a href="add-bonificacao-venda-sel-produtos.html" onclick="abrirModal()"><input class="next-button" type="button" value="Próximo"></a>
             </div>
-
         </form>
     </section>
-
     <footer>
         <div class="marca-wrapper">
             <p>Powered by C4NGAÇO SYSTEMS</p>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/js/geral.js"></script>
+    <script src="/assets/js/geral.js"></script>
 </body>
 
 </html>

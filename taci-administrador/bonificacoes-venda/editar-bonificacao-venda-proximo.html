@@ -34,19 +34,19 @@
         </nav>
     </header>
     <section class="container">
-        <h1>Editar bonificação</h1>
+        <h1>Editar bonificação por venda</h1>
         <form class="generic-form" action="formulário" method="post">
             <div class="generic-form__box-wrapper">
                 <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label>
-                <input class="input-generic-box" type="text" value="Fantasia de Carnaval" required maxlength="20">
+                <input class="input-generic-box" type="text" placeholder="" required maxlength="20">
             </div>
             <div class="generic-form__box-wrapper">
                 <label style="font-weight: bold;" for="cnpj">Validade:</label>
-                <input class="input-generic-box" type="date"  required maxlength="20">
+                <input class="input-generic-box" type="date" placeholder="" required maxlength="20">
             </div>
             <div class="generic-form__box-wrapper">
                 <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label>
-                <input class="input-generic-box" type="text" value="R$ 100,00" required maxlength="20">
+                <input class="input-generic-box" type="text" placeholder="" required maxlength="20">
             </div>
             <div class="card card-resumo">
                 <p>Lojas a serem bonificadas</p>
@@ -62,8 +62,8 @@
             </div>
             </div>
             <div class="next-cancel-button-wrapper">
-                <input class="cancel-button" type="submit" value="Voltar">
-                <a href="#" class="salvar"><input class="next-button" type="button" value="Salvar"></a>
+                <a href="add-bonificacao-venda.html" class="voltar"><input class="back-button" type="button" value="voltar"></a>
+                <a href="edit-bonificacao-venda-sel-lojas.html" onclick="abrirModal()"><input class="next-button" type="button" value="Próximo"></a>
             </div>
 
         </form>
