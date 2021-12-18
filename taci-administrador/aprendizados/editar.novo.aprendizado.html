@@ -50,9 +50,9 @@
             </div>
         </div>
         <div class="box-edicao__wrappers">
-            <input class="box-edicao__title" type="text" placeholder="Titulo do vídeo" maxlength="30px">
-            <input class="box-edicao__subtitle" type="text" placeholder="Subtítulo" maxlength="50px">
-            <input class="box-edicao__descricao" type="text" placeholder="Descrição" maxlength="200px">
+            <input class="box-edicao__titulo" type="text" id="título" name="título" placeholder="Título" required="required" maxlength="30"/>
+            <input class="box-edicao__subtitle" id="substitulo" type="text" placeholder="Subtítulo" maxlength="50px" required="required"/>
+            <input class="box-edicao__descricao" id="Descrição" type="text" placeholder="Descrição" maxlength="200px" required="required"/>
         </div>
         <div class="next-cancel-button-wrapper">
             <a href="home-aprendizado.html"><button class="cancel-button" type="button">Cancelar</button></a>
@@ -64,11 +64,15 @@
             <div class="texto-aviso">
                 <p>Aprendizado editado com sucesso!</p>
             </div>
-            <button class="modal__btn-primary" onclick="fecharModal()"><a href="home-aprendizado.html">Fechar</button>
+            <div class="modal__btns´wrappers">
+                <button class="modal__btn-primary" onclick="fecharModal()"><a href="home-aprendizado.html">Fechar</button>
+            </div>
         </div>
         <div id="modal2" class="modal">
             <div class="texto-aviso">
                 <p>Imagem adicionada com sucesso</p>
+            </div>
+            <div class="modal__btns-wrapper">
                 <button class="modal__btn-primary" onclick=" fecharModal()">Fechar</button>
             </div>
         </div>
