@@ -39,8 +39,8 @@
 
         <input type="search" class="input-search-box" placeholder="Pesquisar vídeos">
         <div class="add-button-wrapper">
-            <a href=""></a><button class="add-button"><a href=""><i class="fas fa-plus-circle"></i>Adicionar novo
-                    vídeo</a></button>
+            <a href="./add-novo-aprendizado.html"><button class="add-button"><i class="fas fa-plus-circle"></i>Adicionar novo
+                    vídeo</button></a>
             <button class="button-ranking"><a href="../aprendizados/ranking-aprendizados.html"><img
                         class="img-ranking-wrapper" src="/assets/img/Ícon - Statistic.png"
                         alt="imagem da estatística"></a></button>
@@ -179,24 +179,28 @@
         <div id="fundo" onclick="fecharModal()"></div>
         <div id="modal" class="modal">
             <div class="texto-aviso">
-                <p class="p-deletar-card">Você tem certeza que deseja deletar este aprendizado?</p>
+                <p>Você tem certeza que deseja deletar este aprendizado?</p>
             </div>
-            <button class="modal__btn-secondary" onclick="fecharModal()">Não</button>
-            <button class="modal__btn-primary" onclick="modalConfirmacao()">Sim</button>
+            <div class="modal_btns-wrapper">
+                <button class="modal__btn-secondary" onclick="fecharModal()">Não</button>
+                <button class="modal__btn-primary" onclick="modalConfirmacao()">Sim</button>
+            </div>
         </div>
         <div id="modal2" class="modal">
             <div class="texto-aviso">
-                <p class="p-deletar-card">Este aprendizado será deletado, confirme a senha para continuar</p>
-                <input class ="input-passw-box" type="password" name="senha" placeholder="********">
+                <p>Este aprendizado será deletado, confirme a senha para continuar</p>
             </div>
-            <button class="modal__btn-secondary" onclick="fecharModal()">Voltar</button>
-            <button class="modal__btn-primary" onclick="modalConclusao()">OK</button>
+            <input class="input-passw-box" type="password" name="senha" placeholder="********">
+            <div class="modal_btns-wrapper">
+                <button class="modal__btn-secondary" onclick="fecharModal()">Voltar</button>
+                <button class="modal__btn-primary" onclick="modalConclusao()">OK</button>
+            </div>
         </div>
-        <div id="modal3" class="modal">
-            <div class="texto-aviso" onclick="fecharModal()">
-                <p class="p-deletar-card">Aprendizado deletado com sucesso</p>
-                <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+        <div id="modal3" class="modal" onclick="fecharModal()">
+            <div class="texto-aviso">
+                <p>Aprendizado deletado com sucesso</p>
             </div>
+            <i class="fas fa-check-circle"></i>
         </div>
 
     </section>
