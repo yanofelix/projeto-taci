@@ -76,29 +76,84 @@
                                 class="fas fa-trash-alt"></i></a></button>
                 </div>
             </div>
+            <!-- card vendedor associado -->
+            <div class="card">
+                <div class="card__img-wrapper">
+                    <img src="/assets/img/ze-do-bone.jpg" alt="">
+                </div>
+                <div class="card__conteudo">
+                    <h4 class="card__titulo">Zé do bone</h4>
+                    <p class="card__descricao">Cel: (81)99999-9999</p>
+                    <p class="card__descricao">Email: zedobone@gmail.com</p>
+                    <p class="card__descricao">Aprendizados</p>
+                </div>
+                <div class="edit-del-button-wrapper">
+                    <button class="edit-button"><a href="./edit-vendedor.html"><i class="fas fa-edit"></i></a></button>
+                    <button class="del-button" onclick="abrirModal()"><a class="#" onclick="abrirModal();"><i
+                                class="fas fa-trash-alt"></i></a></button>
+                </div>
+            </div>
+            <!-- card vendedor associado -->
+            <div class="card">
+                <div class="card__img-wrapper">
+                    <img src="/assets/img/ze-do-bone.jpg" alt="">
+                </div>
+                <div class="card__conteudo">
+                    <h4 class="card__titulo">Zé do bone</h4>
+                    <p class="card__descricao">Cel: (81)99999-9999</p>
+                    <p class="card__descricao">Email: zedobone@gmail.com</p>
+                    <p class="card__descricao">Aprendizados</p>
+                </div>
+                <div class="edit-del-button-wrapper">
+                    <button class="edit-button"><a href="./edit-vendedor.html"><i class="fas fa-edit"></i></a></button>
+                    <button class="del-button" onclick="abrirModal()"><a class="#" onclick="abrirModal();"><i
+                                class="fas fa-trash-alt"></i></a></button>
+                </div>
+            </div>
+            <!-- card vendedor associado -->
+            <div class="card">
+                <div class="card__img-wrapper">
+                    <img src="/assets/img/ze-do-bone.jpg" alt="">
+                </div>
+                <div class="card__conteudo">
+                    <h4 class="card__titulo">Zé do bone</h4>
+                    <p class="card__descricao">Cel: (81)99999-9999</p>
+                    <p class="card__descricao">Email: zedobone@gmail.com</p>
+                    <p class="card__descricao">Aprendizados</p>
+                </div>
+                <div class="edit-del-button-wrapper">
+                    <button class="edit-button"><a href="./edit-vendedor.html"><i class="fas fa-edit"></i></a></button>
+                    <button class="del-button" onclick="abrirModal()"><a class="#" onclick="abrirModal();"><i
+                                class="fas fa-trash-alt"></i></a></button>
+                </div>
+            </div>
         </div>
         <!-- modal -->
         <div id="fundo" onclick="fecharModal()"></div>
         <div id="modal" class="modal">
             <div class="texto-aviso">
-                <p class="p-deletar-card">Você tem certeza que deseja deletar este vendedor?</p>
+                <p>Você tem certeza que deseja deletar este vendedor?</p>
             </div>
-            <button class="modal__btn-secondary" onclick="fecharModal()">Não</button>
-            <button class="modal__btn-primary" onclick="modalConfirmacao()">Sim</button>
+            <div class="modal__btns-wrapper">
+                <button class="modal__btn-secondary" onclick="fecharModal()">Não</button>
+                <button class="modal__btn-primary" onclick="modalConfirmacao()">Sim</button>
+            </div>
         </div>
         <div id="modal2" class="modal">
             <div class="texto-aviso">
-                <p class="p-deletar-card">Este vendedor será deletado, confirme a senha para continuar</p>
-                <input class ="input-passw-box" type="password" name="senha" placeholder="********">
+                <p>Este vendedor será deletado, confirme a senha para continuar</p>
             </div>
-            <button class="modal__btn-secondary" onclick="fecharModal()">Voltar</button>
-            <button class="modal__btn-primary" onclick="modalConclusao()">OK</button>
+            <input class="input-passw-box" type="password" name="senha" placeholder="********">
+            <div class="modal__btns_wrapper">
+                <button class="modal__btn-secondary" onclick="fecharModal()">Voltar</button>
+                <button class="modal__btn-primary" onclick="modalConclusao()">OK</button>
+            </div>
         </div>
-        <div id="modal3" class="modal">
-            <div class="texto-aviso" onclick="fecharModal()">
-                <p class="p-deletar-card">Vendedor deletado com sucesso</p>
-                <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+        <div id="modal3" class="modal" onclick="fecharModal()">
+            <div class="texto-aviso">
+                <p>Vendedor deletado com sucesso</p>
             </div>
+            <i class="fas fa-check-circle"></i>
         </div>
 
     </section>

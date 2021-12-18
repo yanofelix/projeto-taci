@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Lojistas Associados</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
     <header>
         <div class="logo-wrapper">
@@ -36,90 +37,96 @@
         <div class="in-page-nav">
             <a href="../bonificacoes-aprendizado/home-bonificacao.html">Bonificação > </a>
             <p>Bonificação por aprendizado</p>
-        </div><br>    
+        </div><br>
         <input type="search" class="input-search-box" placeholder="Pesquisar Bonificações">
         <section class="filtersec">
             <button class="filtersec__btn">Validade</button>
             <button class="filtersec__btn">Valor</button>
             <button class="filtersec__btn">Data do envio</button>
-        </section><br>    
+        </section><br>
         <div class="add-button-wrapper">
             <button class="add-button"><a href="./add-bonificacao-aprendizado.html"><i class="fas fa-plus-circle"></i>Adicionar Bonificação</a></button>
         </div><br>
-        <div class="card">
-            <div class="card__conteudo">
-            <p>Nome da bonificação: Viaje com a família</p>
-            <p>ID: 204511</p>
-            <p>Valor da bonificação: R$ 999</p>
-            <p>Validade: 01/01/2022</p>
-            <p>Meta: Assistir 4 vídeos</p>
-            </div>        
-        <div class="edit-del-button-wrapper">
-            <button class="edit-button"><a href="add-bonificacao-aprendizado.html"><i class="fas fa-edit"></i></a></button>
-            <button class="del-button"><a class="#" onclick="abrirModal();"><i class="fas fa-trash-alt"></i></a></button>
+        <div class="cards">
+            <div class="card">
+                <div class="card__conteudo">
+                    <p>Nome da bonificação: Viaje com a família</p>
+                    <p>ID: 204511</p>
+                    <p>Valor da bonificação: R$ 999</p>
+                    <p>Validade: 01/01/2022</p>
+                    <p>Meta: Assistir 4 vídeos</p>
+                </div>
+                <div class="edit-del-button-wrapper">
+                    <button class="edit-button"><a href="./editar-bonificacao.html"><i class="fas fa-edit"></i></a></button>
+                    <button class="del-button"><a class="#" onclick="abrirModal();"><i class="fas fa-trash-alt"></i></a></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__conteudo">
+                    <p>Nome da bonificação: Viaje com a família</p>
+                    <p>ID: 204511</p>
+                    <p>Valor da bonificação: R$ 999</p>
+                    <p>Validade: 01/01/2022</p>
+                    <p>Meta: Assistir 4 vídeos</p>
+                </div>
+                <div class="edit-del-button-wrapper">
+                    <button class="edit-button"><a href="./editar-bonificacao.html"><i class="fas fa-edit"></i></a></button>
+                    <button class="del-button"><a class="#" onclick="abrirModal();"><i class="fas fa-trash-alt"></i></a></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__conteudo">
+                    <p>Nome da bonificação: Viaje com a família</p>
+                    <p>ID: 204511</p>
+                    <p>Valor da bonificação: R$ 999</p>
+                    <p>Validade: 01/01/2022</p>
+                    <p>Meta: Assistir 4 vídeos</p>
+                </div>
+                <div class="edit-del-button-wrapper">
+                    <button class="edit-button"><a href="./editar-bonificacao.html"><i class="fas fa-edit"></i></a></button>
+                    <button class="del-button"><a class="#" onclick="abrirModal();"><i class="fas fa-trash-alt"></i></a></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__conteudo">
+                    <p>Nome da bonificação: Viaje com a família</p>
+                    <p>ID: 204511</p>
+                    <p>Valor da bonificação: R$ 999</p>
+                    <p>Validade: 01/01/2022</p>
+                    <p>Meta: Assistir 4 vídeos</p>
+                </div>
+                <div class="edit-del-button-wrapper">
+                    <button class="edit-button"><a href="./editar-bonificacao.html"><i class="fas fa-edit"></i></a></button>
+                    <button class="del-button"><a class="#" onclick="abrirModal();"><i class="fas fa-trash-alt"></i></a></button>
+                </div>
+            </div>
+            <div id="fundo" onclick="fecharModal()"></div>
+            <div id="modal" class="modal">
+                <div class="texto-aviso">
+                    <p>Você tem certeza que deseja deletar esta bonificação?</p>
+                </div>
+                <div class="modal_btns-wrapper">
+                    <button class="modal__btn-secondary" onclick="fecharModal()">Não</button>
+                    <button class="modal__btn-primary" onclick="modalConfirmacao()">Sim</button>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="texto-aviso">
+                    <p>Esta bonificação será deletado, confirme a senha para continuar</p>
+                </div>
+                <input class="input-passw-box" type="password" name="senha" placeholder="********">
+                <div class="modal_btns-wrapper">
+                    <button class="modal__btn-secondary" onclick="fecharModal()">Voltar</button>
+                    <button class="modal__btn-primary" onclick="modalConclusao()">OK</button>
+                </div>
+            </div>
+            <div id="modal3" class="modal" onclick="fecharModal()">
+                <div class="texto-aviso">
+                    <p>Bonificação deletada com sucesso</p>
+                </div>
+                <i class="fas fa-check-circle"></i>
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <div class="card__conteudo">
-        <p>Nome da bonificação: Viaje com a família</p>
-        <p>ID: 204511</p>
-        <p>Valor da bonificação: R$ 999</p>
-        <p>Validade: 01/01/2022</p>
-        <p>Meta: Assistir 4 vídeos</p>
-        </div>    
-    <div class="edit-del-button-wrapper">
-        <button class="edit-button"><a href="./editar-bonificacao.html"><i class="fas fa-edit"></i></a></button>
-        <button class="del-button"><a class="#" onclick="abrirModal();"><i class="fas fa-trash-alt"></i></a></button>
-    </div>
-</div>
-<div class="card">
-    <div class="card__conteudo">
-    <p>Nome da bonificação: Viaje com a família</p>
-    <p>ID: 204511</p>
-    <p>Valor da bonificação: R$ 999</p>
-    <p>Validade: 01/01/2022</p>
-    <p>Meta: Assistir 4 vídeos</p>
-    </div>
-<div class="edit-del-button-wrapper">
-    <button class="edit-button"><a href="./editar-bonificacao.html"><i class="fas fa-edit"></i></a></button>
-    <button class="del-button"><a class="#" onclick="abrirModal();"><i class="fas fa-trash-alt"></i></a></button>
-</div>
-</div>
-<div class="card">
-    <div class="card__conteudo">
-    <p>Nome da bonificação: Viaje com a família</p>
-    <p>ID: 204511</p>
-    <p>Valor da bonificação: R$ 999</p>
-    <p>Validade: 01/01/2022</p>
-    <p>Meta: Assistir 4 vídeos</p>
-    </div>
-<div class="edit-del-button-wrapper">
-    <button class="edit-button"><a href="./editar-bonificacao.html"><i class="fas fa-edit"></i></a></button>
-    <button class="del-button"><a class="#" onclick="abrirModal();"><i class="fas fa-trash-alt"></i></a></button>
-</div>
-<div id="fundo" onclick="fecharModal()"></div>
-<div id="modal" class="modal">
-    <div class="texto-aviso">
-        <p class="p-deletar-card">Você tem certeza que deseja deletar esta bonificação?</p>
-    </div>
-    <button class="modal__btn-secondary" onclick="fecharModal()">Não</button>
-    <button class="modal__btn-primary" onclick="modalConfirmacao()">Sim</button>
-</div>
-<div id="modal2" class="modal">
-    <div class="texto-aviso">
-        <p class="p-deletar-card">Esta bonificação será deletado, confirme a senha para continuar</p>
-        <input class ="input-passw-box" type="password" name="senha" placeholder="********">
-    </div>
-    <button class="modal__btn-secondary" onclick="fecharModal()">Voltar</button>
-    <button class="modal__btn-primary" onclick="modalConclusao()">OK</button>
-</div>
-<div id="modal3" class="modal">
-    <div class="texto-aviso" onclick="fecharModal()">
-        <p class="p-deletar-card">Bonificação deletado com sucesso</p>
-        <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
-    </div>
-</div>
-</div>
     </section>
     <footer>
         <div class="marca-wrapper">
@@ -128,4 +135,5 @@
     </footer>
     <script src="/assets/js/geral.js"></script>
 </body>
+
 </html>
