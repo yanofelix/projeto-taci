@@ -51,9 +51,17 @@
             </div>
 
             <div class="next-cancel-button-wrapper">
-                <button class="cancel-button"><a href="faq.html">cancelar</a></button>
-                <input class="next-button" type="submit" value="salvar">
+                <a href="faq.html"><button class="cancel-button" type="button">Cancelar</button></a>
+                <a class="salvar" onclick="abrirModal();"><button type="button" id="botao" class="next-button">Salvar</button></a>
             </div>
+    
+            <div id="fundo"></div>
+            <div id="modal" class="modal">
+                <div class="texto-aviso">
+                    <p>FAQ adicionada com sucesso!</p>
+                </div>
+                <button class="modal__btn-primary" onclick="fecharModal()"><a href="faq.html">Fechar</button>
+
 
         </form>
 
