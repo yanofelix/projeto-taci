@@ -34,48 +34,63 @@
         </nav>
     </header>
     <section class="container">
-        <h1>Adicionar bonificação por venda</h1>
+        <h1>Selecione os produtos que farão parte da meta</h1>
+
+        <input type="search" class="input-search-box" placeholder="Pesquisar Lojas">
+        <section class="filtersec">
+            <button class="filtersec__btn">Selecionar todos</button>
+        </section><br>
         <form class="generic-form" action="formulário" method="post">
             <div class="generic-form__box-wrapper">
-                <label style="font-weight: bold;" for="cnpj">Nome da bonificação:</label>
-                <input class="input-generic-box" type="text" placeholder="" required maxlength="20">
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Vestido infantil P</label>
             </div>
             <div class="generic-form__box-wrapper">
-                <label style="font-weight: bold;" for="cnpj">Validade:</label>
-                <input class="input-generic-box" type="date" placeholder="" required maxlength="20">
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Tiara de princesa</label>
             </div>
             <div class="generic-form__box-wrapper">
-                <label style="font-weight: bold;" for="cnpj">Valor da bonificação:</label>
-                <input class="input-generic-box" type="text" placeholder="" required maxlength="20">
-            </div>
-            <div class="card card-resumo">
-                <p>Lojas a serem bonificadas</p>
-                <p> C&A, Renner, Loja tio João.</p>
-            </div>
-            <div class="card card-resumo">
-                <p>Selecione um tipo de meta</p>
-                <p> Por produto: Conjunto menina maravilha; Fantasia manga rosa </p>
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Sapatinho da barbie</label>
             </div>
             <div class="generic-form__box-wrapper">
-                <label style="font-weight: bold;" for="cnpj">Quantos produtos deverão ser vendidos?</label>
-                <input class="input-generic-box" type="text" value="350 unidades">
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Meias tamanho M</label>
             </div>
+            <div class="generic-form__box-wrapper">
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Conjunto calça T-shirt</label>
+            </div>
+            <div class="generic-form__box-wrapper">
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Conjunto da menina maravilha</label>
+            </div>
+            <div class="generic-form__box-wrapper">
+                <input class="input-generic-box" type="checkbox" name="Vídeo 1">
+                <label style="font-weight: bold;" for="name">Fantasia manga rosa</label>
             </div>
             <div class="next-cancel-button-wrapper">
-                <a href="add-bonificacao-venda.html" class="voltar"><input class="back-button" type="button" value="voltar"></a>
-                <a href="add-bonificacao-venda-sel-lojas.html" onclick="abrirModal()"><input class="next-button" type="button" value="Próximo"></a>
+                <a href="edit-bonificacao-venda-sel-lojas.html" class="salvar"><input class="back-button" type="button" value="voltar"></a>
+                <a href="#" onclick="abrirModal()"><input class="next-button" type="button" value="Salvar"></a>
             </div>
-
+        </form>
+        <div id="fundo"></div>
+        <a href="home-bonificacoes-venda.html"> 
+            <div id="modal" class="modal" onclick="fecharModal()">
+                <div class="texto-aviso">
+                    <p>Bonificação editada com sucesso!</p>
+                    <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+                </div>
+            </div>
+        </a>
         </form>
     </section>
-
     <footer>
         <div class="marca-wrapper">
             <p>Powered by C4NGAÇO SYSTEMS</p>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/js/geral.js"></script>
+    <script src="/assets/js/geral.js"></script>
 </body>
 
 </html>
