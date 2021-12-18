@@ -70,9 +70,20 @@
                 <label style="font-weight: bold;" for="name">Fantasia manga rosa</label>
             </div>
             <div class="next-cancel-button-wrapper">
-                <a href="#"><input class="cancel-button" type="submit" value="Voltar"></a>
-                <a href="#" class="salvar"><input class="next-button" type="button" value="Próximo"></a>
+                <a href="add-edit-bonificacao-venda-sel-lojas.html" class="Voltar"><input class="back-button" type="button" value="voltar"></a>
+                <a onclick="abrirModal()"><input class="next-button" type="button" value="Salvar"></a>
             </div>
+        </a>
+        </form>
+        <div id="fundo"></div>
+            <a href="home-bonificacoes-venda.html"> 
+                <div id="modal" class="modal" onclick="fecharModal()">
+                    <div class="texto-aviso">
+                        <p>Bonificação editada com sucesso!</p>
+                        <button class="modal__btn-secondary" style="border: none"><i class="fas fa-check-circle"></i></button>
+                    </div>
+                </div>
+            </a>
         </form>
     </section>
     <footer>
